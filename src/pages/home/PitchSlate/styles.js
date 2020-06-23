@@ -7,12 +7,12 @@ export const StyledPitchSlate = styled.section`
   .container{
     display: flex;
     align-items:center;
-    border: 1px solid ${({ theme }) => theme.lightColor};
+    /* border: 1px solid ${({ theme }) => theme.lightColor}; */
     height: 100%;
 
     .intro{
       width: 50%;
-      border: 1px solid ${({ theme }) => theme.lightColor};
+      /* border: 1px solid ${({ theme }) => theme.lightColor}; */
       color: ${({ theme }) => theme.lightColor};
 
       h2{
@@ -26,7 +26,7 @@ export const StyledPitchSlate = styled.section`
       position: relative;
       width: 50%;
       height: 34vmax;
-      border: 1px solid ${({ theme }) => theme.lightColor};
+      /* border: 1px solid ${({ theme }) => theme.lightColor}; */
 
       div:nth-of-type(1){
         position: absolute;
