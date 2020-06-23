@@ -5,7 +5,9 @@ import { ExBag } from '../../../components'
 export const Projects = () => {
   return (
     <StyledProjects>
-      <ExBag name='Projects' />
+      <div className='container'>
+        <ExBag name='Projects' />
+      </div>
     </StyledProjects>
   )
 }

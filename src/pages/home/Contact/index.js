@@ -4,7 +4,7 @@ import { StyledContact } from './styles';
 export const Contact = () => {
   return (
     <StyledContact>
-      Contact
+
     </StyledContact>
   )
 }

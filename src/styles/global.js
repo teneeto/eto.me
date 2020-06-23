@@ -37,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   section {
-    /* border-bottom: 5px solid ${({ theme }) => theme.primaryColor}; */
+    border-bottom: 1px solid ${({ theme }) => theme.primaryColor};
     padding: 1.5rem 4.75vw ;
     height: 100vh;
     scroll-snap-align: start;
