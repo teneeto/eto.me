@@ -25,6 +25,7 @@ export const PitchSlate = () => {
           <div></div>
           <Pattern2 className='pattern2' data-shape />
           <span className='ketchup' aria-label='Photo of Eto' role='img' />
+          <div></div>
         </div>
       </div>
     </StyledPitchSlate>

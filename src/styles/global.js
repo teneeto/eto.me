@@ -15,13 +15,11 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html,body{
-    font-family: Poppins, sans-serif;
-    background: ${({ theme }) => theme.primaryColor};
+  html, body{
     /* Enable Safari touch scrolling physics which is needed for scroll snap */
     -webkit-overflow-scrolling: touch;
 
-  	scroll-snap-type:y mandatory;
+  	scroll-snap-type: y mandatory;
     
     /* Hide scrollbar for IE and Edge */
     -ms-overflow-style: none;
@@ -31,16 +29,21 @@ export const GlobalStyles = createGlobalStyle`
   html::-webkit-scrollbar {
     display: none;
   }
+
+  body{
+    background: ${({ theme }) => theme.primaryColor};
+    font-family: 'Poppins', sans-serif;
+  }
+
   h1, h2, h3, h4, h5, h6, p, div, article, section{
     margin: 0;
     padding: 0;
   }
 
   section {
-    border-bottom: 1px solid ${({ theme }) => theme.primaryColor};
     padding: 1.5rem 4.75vw ;
     height: 100vh;
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
+    scroll-snap-stop: always;
   }
 `;

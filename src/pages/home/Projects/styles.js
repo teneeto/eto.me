@@ -10,7 +10,7 @@ export const StyledProjects = styled.section`
   .container{
     display: flex;
     align-items:center;
-    border: 1px solid ${({ theme }) => theme.primaryColor};
+    /* border: 1px solid ${({ theme }) => theme.primaryColor}; */
     height: 100%;
   }
 `

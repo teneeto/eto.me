@@ -10,6 +10,6 @@ export const StyledHeader = styled.header`
   
   
   h1{
-    color: ${({ theme }) => theme.lightColor};
+    color: ${({ theme, visible }) => (visible.footer || visible.home) ? theme.lightColor : theme.primaryColor};
   }
 `

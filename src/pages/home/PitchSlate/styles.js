@@ -24,7 +24,7 @@ export const StyledPitchSlate = styled.section`
     }
     .picture{
       position: relative;
-      width: 50%;
+      /* width: 50%; */
       height: 34vmax;
       /* border: 1px solid ${({ theme }) => theme.lightColor}; */
 
@@ -45,6 +45,18 @@ export const StyledPitchSlate = styled.section`
         /* margin:2.5rem 0 0 2.5rem; */
         margin:2.4rem 0 0 5rem; 
       }
+      div:nth-of-type(3){
+        position: absolute;
+        background: #FF8900 0% 0% no-repeat padding-box;
+        opacity: 0;
+        border-radius: 10px;
+        width: 29vmax;
+        height: 33.5vmax;
+        /* margin:2.5rem 0 0 2.5rem; */
+        margin:1.2rem 0 0 3.5rem;
+        cursor: pointer;
+        /* z-index: 40; */
+      }
       .ketchup{
         display: block;
         position: absolute;
@@ -56,7 +68,6 @@ export const StyledPitchSlate = styled.section`
         background-image: url(${ketchup});
         /* margin:0.5rem 0 0 0.5rem; */
         margin:0.55rem 0 0 3rem;
-        z-index: 40;
       }
       .pattern1{
         position: absolute;
@@ -75,6 +86,31 @@ export const StyledPitchSlate = styled.section`
         left:26;
         height: 15rem;
         width: auto; 
+      }
+
+      &:hover{
+        div:nth-of-type(1){
+          margin:0.15rem 0 0 2.55rem;
+          transition: all 0.3s linear;
+        }
+        div:nth-of-type(2){
+          margin:2.25rem 0 0 4.85rem; 
+          transition: all 0.3s linear;
+        }
+        div:nth-of-type(3){
+          opacity:0.1; 
+          transition: all 0.3s linear;
+        }
+        .pattern1{
+          margin-top: -2.35rem;
+          margin-left: 0.15rem;
+          transition: all 0.3s linear;
+        }
+        .pattern2{
+          /* margin: 21.85vw 0  0 28.75vw; */
+          margin: 21vw 0  0 28vw;
+          transition: all 0.3s linear;
+        }
       }
     }
   }

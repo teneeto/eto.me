@@ -23,7 +23,7 @@ export const StyledBurger = styled.button`
 
   &:hover{
     div{
-      background: ${({ theme, open }) => open ? theme.primaryColor : theme.lightColor};
+      background: ${({ theme, open, visible }) => !(visible.home || visible.footer) || open ? theme.primaryColor : theme.lightColor};
       transition: all 0.3s linear;
 
       :nth-child(2) {
@@ -41,7 +41,7 @@ export const StyledBurger = styled.button`
     height: 0.35rem;
     border-radius: 10px;
     /* background: ${({ theme, open }) => open ? theme.primaryColor : theme.lightColor}; */
-    border: 2px solid ${({ theme, open }) => open ? theme.primaryColor : theme.lightColor};
+    border: 2px solid ${({ theme, open, visible }) => open || !(visible.home || visible.footer) ? theme.primaryColor : theme.lightColor};
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
