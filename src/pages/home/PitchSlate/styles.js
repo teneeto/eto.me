@@ -47,7 +47,8 @@ export const StyledPitchSlate = styled.section`
       }
       div:nth-of-type(3){
         position: absolute;
-        background: #FF8900 0% 0% no-repeat padding-box;
+        /* background: #FF8900 0% 0% no-repeat padding-box; */
+        background: ${({ theme }) => theme.primaryColor};
         opacity: 0;
         border-radius: 10px;
         width: 29vmax;
@@ -75,8 +76,6 @@ export const StyledPitchSlate = styled.section`
         margin-top: -2.5rem;
         height: 10rem;
         width: auto;
-
-
       }
       .pattern2{
         position: absolute;
@@ -98,7 +97,7 @@ export const StyledPitchSlate = styled.section`
           transition: all 0.3s linear;
         }
         div:nth-of-type(3){
-          opacity:0.1; 
+          opacity:0.2; 
           transition: all 0.3s linear;
         }
         .pattern1{
