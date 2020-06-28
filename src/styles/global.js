@@ -1,14 +1,32 @@
 // global.js
 import { createGlobalStyle } from 'styled-components';
-import Poppins from '../assets/fonts/Poppins/Poppins-Regular.ttf';
+import PoppinsRegular from '../assets/fonts/Poppins/Poppins-Regular.ttf';
+import PoppinsSemiBold from '../assets/fonts/Poppins/Poppins-SemiBold.ttf';
+import PoppinsBold from '../assets/fonts/Poppins/Poppins-Bold.ttf';
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
-    src: local('Poppins'),
-        url(${Poppins});
+    src: local('Poppins Regular'),local('Poppins-Regular'),
+        url(${PoppinsRegular});
+  }
+
+  @font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    src: local('Poppins SemiBold'),local('Poppins-SemiBold'),
+        url(${PoppinsSemiBold});
+  }
+
+  @font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Poppins Bold'),local('Poppins-Bold'),
+        url(${PoppinsBold});
   }
 
   * {
@@ -33,6 +51,7 @@ export const GlobalStyles = createGlobalStyle`
   body{
     background: ${({ theme }) => theme.primaryColor};
     font-family: 'Poppins', sans-serif;
+    /* font-size: calc(10px + 1vmin); */
   }
 
   h1, h2, h3, h4, h5, h6, p, div, article, section{
