@@ -9,14 +9,9 @@ export const PitchSlate = () => {
       <div className='container'>
         <div className='intro'>
           <h2>Hello I'm Eto Olei,</h2>
-          <h2>FrontEnd Developer</h2>
+          <h2>I build for the Web</h2>
           <p>
-            Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deseruntmollit anim id
-            est eopksio laborum. Sed ut perspiciatis unde omnis istpoe
-            natus error sit voluptatem accusantium doloremque eopsloi audantium,
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
-            et quasi architecto beatae vitae dicta sunot explicabo. Nemo ernim ipsam.
+            I am a Software developer, based in Lagos. i spend time building amazing websites, applications and everything in between
           </p>
         </div>
         <div className='picture'>

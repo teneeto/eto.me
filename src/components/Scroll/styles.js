@@ -15,7 +15,6 @@ export const StyledScroll = styled.div`
   cursor: pointer;
   padding: 0;
   margin: 0 1rem 0 0;
-  z-index: 999;
 
   &:focus {
     outline: none;

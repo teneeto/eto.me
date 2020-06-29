@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-const ketchup = require('../../../assets/ketchup.png');
+const ketchup = require('../../../assets/ketchup.jpg');
 
 export const StyledPitchSlate = styled.section`
   background: ${({ theme }) => theme.primaryColor};
@@ -61,14 +61,18 @@ export const StyledPitchSlate = styled.section`
       .ketchup{
         display: block;
         position: absolute;
-        width: 30vmax;
-        height: 35vmax;
+        /* width: 30vmax; */
+        /* height: 35vmax; */
+        width: 29vmax;
+        height: 33.5vmax;
         /* margin-top: -2.435em; */
         background-size: cover;
         background-position-x: center;
         background-image: url(${ketchup});
         /* margin:0.5rem 0 0 0.5rem; */
-        margin:0.55rem 0 0 3rem;
+        /* margin:0.55rem 0 0 3rem; */
+        margin:1.2rem 0 0 3.5rem;
+        border-radius: 10px;
       }
       .pattern1{
         position: absolute;

@@ -2,31 +2,24 @@
 import { createGlobalStyle } from 'styled-components';
 import PoppinsRegular from '../assets/fonts/Poppins/Poppins-Regular.ttf';
 import PoppinsSemiBold from '../assets/fonts/Poppins/Poppins-SemiBold.ttf';
-import PoppinsBold from '../assets/fonts/Poppins/Poppins-Bold.ttf';
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: local('Poppins Regular'),local('Poppins-Regular'),
-        url(${PoppinsRegular});
+        url(${PoppinsRegular}) format('truetype');
   }
 
   @font-face {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
+    font-display: swap;
     src: local('Poppins SemiBold'),local('Poppins-SemiBold'),
-        url(${PoppinsSemiBold});
-  }
-
-  @font-face {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 700;
-    src: local('Poppins Bold'),local('Poppins-Bold'),
-        url(${PoppinsBold});
+        url(${PoppinsSemiBold}) format('truetype');
   }
 
   * {
