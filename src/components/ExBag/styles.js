@@ -11,6 +11,7 @@ export const StyledExBag = styled.div`
 
   h2{
     font-size: 50px;
+    color: ${({ theme }) => theme.lightColor}
   }
 
   .wrapper{

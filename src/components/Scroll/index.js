@@ -53,12 +53,12 @@ export const Scroll = ({ visible }) => {
         <div className='pitchslate'></div>
       </ScrollLink>
 
-      <ScrollLink to='about' spy={true} smooth={true} duration={5} offset={-400} onSetActive={handleAbout} >
-        <div className='about'></div>
-      </ScrollLink>
-
       <ScrollLink to='projects' spy={true} smooth={true} duration={5} offset={-400} onSetActive={handleProjects} >
         <div className='projects'></div>
+      </ScrollLink>
+
+      <ScrollLink to='about' spy={true} smooth={true} duration={5} offset={-400} onSetActive={handleAbout} >
+        <div className='about'></div>
       </ScrollLink>
 
       <ScrollLink to='contact' spy={true} smooth={true} duration={5} offset={-400} onSetActive={handleContacts}>

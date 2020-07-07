@@ -55,7 +55,6 @@ export const StyledPitchSlate = styled.section`
         height: 33.5vmax;
         /* margin:2.5rem 0 0 2.5rem; */
         margin:1.2rem 0 0 3.5rem;
-        cursor: pointer;
         /* z-index: 40; */
       }
       .ketchup{

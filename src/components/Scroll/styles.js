@@ -14,7 +14,7 @@ export const StyledScroll = styled.div`
   border: none;
   cursor: pointer;
   padding: 0;
-  margin: 0 1rem 0 0;
+  /* margin: 0 1rem 0 0; */
 
   &:focus {
     outline: none;
@@ -25,13 +25,13 @@ export const StyledScroll = styled.div`
     height: 0.75rem;
     border-radius: 0.75rem;
     /* background: ${({ theme, open }) => open ? theme.primaryColor : theme.lightColor}; */
-    border: 2px solid ${({ theme, open, visible }) => visible.home || visible.footer || open ? theme.lightColor : theme.primaryColor};
+    border: 2px solid ${({ theme }) => theme.lightColor};
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
     
     &:hover{
-      background: ${({ theme, visible }) => visible.home || visible.footer ? theme.lightColor : theme.primaryColor};
+      background: ${({ theme }) => theme.lightColor};
       transition: all 0.3s linear;
     }
   }
@@ -43,16 +43,16 @@ export const StyledScroll = styled.div`
 
     .projects{
       height: ${({ visible }) => visible.projects ? '2.25rem' : '0.75rem'};
-      background: ${({ theme, visible }) => visible.projects ? theme.primaryColor : 'transparent'};
+      background: ${({ theme, visible }) => visible.projects ? theme.lightColor : 'transparent'};
     }
 
     .about {
       height: ${({ visible }) => visible.about ? '2.25rem' : '0.75rem'};
-      background: ${({ theme, visible }) => visible.about ? theme.primaryColor : 'transparent'};
+      background: ${({ theme, visible }) => visible.about ? theme.lightColor : 'transparent'};
     }
     .contact{
       height: ${({ visible }) => visible.contact ? '2.25rem' : '0.75rem'};
-      background: ${({ theme, visible }) => visible.contact ? theme.primaryColor : 'transparent'};
+      background: ${({ theme, visible }) => visible.contact ? theme.lightColor : 'transparent'};
     }
     .footer {
       height: ${({ visible }) => visible.footer ? '2.25rem' : '0.75rem'};

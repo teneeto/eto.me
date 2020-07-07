@@ -4,7 +4,7 @@ import { ExBag } from '../../../components'
 export const About = () => {
   return (
     <StyledAbout>
-      <ExBag name='About' reverse />
+      <ExBag reverse />
     </StyledAbout>
   )
 }

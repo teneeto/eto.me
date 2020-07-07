@@ -4,8 +4,6 @@ export const StyledProjects = styled.section`
   /* display: flex; */
   justify-content: center;
   align-items: center;
-  background: ${({ theme }) => theme.secondaryColor};
-  color: ${({ theme }) => theme.primaryColor};
 
   .container{
     display: flex;

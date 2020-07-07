@@ -3,6 +3,8 @@ export const theme = {
   primaryColor: '#130221',
   secondaryColor: '#F1F1F1',
   lightColor: '#FFFFFF',
+  accentColor: '#FF8900',
+  greyColor: '#707070',
   widescreen: '1200px',
   desktop: '1024px',
   miniDesktop: '900px',

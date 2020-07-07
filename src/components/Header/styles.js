@@ -4,12 +4,12 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   position: fixed;
-  padding: 1.5rem 4.75rem ;
+  padding: 0.35rem 4.75vw ;
   width: 100%;
   z-index:999;
   
   
   h1{
-    color: ${({ theme, visible }) => (visible.footer || visible.home) ? theme.lightColor : theme.primaryColor};
+    color: ${({ theme }) => theme.accentColor};
   }
 `

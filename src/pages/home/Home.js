@@ -24,12 +24,12 @@ const Home = () => {
 					<PitchSlate />
 				</Element>
 
-				<Element name='about'>
-					<About />
-				</Element>
-
 				<Element name='projects'>
 					<Projects />
+				</Element>
+
+				<Element name='about'>
+					<About />
 				</Element>
 
 				<Element name='contact'>
