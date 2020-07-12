@@ -3,7 +3,6 @@ import { Element } from 'react-scroll'
 
 import { PitchSlate } from './PitchSlate';
 import { Projects } from './Projects';
-import { About } from './About';
 import { Footer } from './Footer';
 import { Contact } from './Contact';
 import { Header, Scroll } from '../../components';
@@ -26,10 +25,6 @@ const Home = () => {
 
 				<Element name='projects'>
 					<Projects />
-				</Element>
-
-				<Element name='about'>
-					<About />
 				</Element>
 
 				<Element name='contact'>

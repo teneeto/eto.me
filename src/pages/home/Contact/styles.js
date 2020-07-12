@@ -29,7 +29,7 @@ export const StyledContact = styled.section`
       div{
         display: flex;
         flex-direction:column;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         
         label{
           color: ${({ theme }) => theme.greyColor};
@@ -38,11 +38,10 @@ export const StyledContact = styled.section`
         input[type="email"],
         input[type='submit'],
         textarea {
-          padding: 0.8em;
+          padding: 0.8rem;
           border: 1px solid ${({ theme }) => theme.greyColor};
           color: ${({ theme }) => theme.lightColor};
           background-color: transparent;
-          border-radius: 5px;
           outline:none;
         }
 
@@ -56,20 +55,6 @@ export const StyledContact = styled.section`
 
         textarea{
           height: 20vh;
-        }
-
-        input[type='submit']{
-          color: ${({ theme }) => theme.lightColor};
-          border: none;
-          background: linear-gradient(to right, #FF8900  50%, transparent 50%) 0% 0% no-repeat padding-box;
-          background-size: 200% 100%;
-          border: 1px solid ${({ theme }) => theme.greyColor};
-          cursor: pointer;
-
-          :hover{
-            background-position: right bottom;
-            transition: all 300ms linear;
-          } 
         }
       }
     }

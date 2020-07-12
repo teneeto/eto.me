@@ -58,4 +58,31 @@ export const GlobalStyles = createGlobalStyle`
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
+
+  p{
+    font-size: 1.172rem;
+    color: ${({ theme }) => theme.lightColor};
+  }
+  h2{
+    font-size: 3.125rem;
+  }
+  input, button{
+    border-radius: 5px;
+  }
+
+  button, input[type='submit']{
+    box-shadow: 0px 3px 10px #FF8900A3;
+    color: ${({ theme }) => theme.lightColor};
+    border: none;
+    padding: 0.8rem;
+    background: linear-gradient(to right, #FF8900  50%, transparent 50%);
+    background-size: 200% 100%;
+    border: 1px solid ${({ theme }) => theme.greyColor};
+    cursor: pointer;
+
+      :hover{
+        background-position: right bottom;
+        transition: all 300ms linear;
+      } 
+  }
 `;

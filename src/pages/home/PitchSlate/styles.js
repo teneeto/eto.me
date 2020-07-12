@@ -15,11 +15,11 @@ export const StyledPitchSlate = styled.section`
       /* border: 1px solid ${({ theme }) => theme.lightColor}; */
       color: ${({ theme }) => theme.lightColor};
 
-      h2{
-        font-size: 54px;
-      }
-      h2:nth-of-type(2){
-        color: #FF8900;
+      h1{
+        font-size: 3.42rem;
+        span{
+          color: ${({ theme }) => theme.accentColor};
+        }
       }
     }
     .picture{

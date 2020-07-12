@@ -5,6 +5,7 @@ export const theme = {
   lightColor: '#FFFFFF',
   accentColor: '#FF8900',
   greyColor: '#707070',
+  lightGreyColor: '#c9c9c9',
   widescreen: '1200px',
   desktop: '1024px',
   miniDesktop: '900px',

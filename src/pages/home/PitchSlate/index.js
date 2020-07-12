@@ -8,8 +8,7 @@ export const PitchSlate = () => {
     <StyledPitchSlate>
       <div className='container'>
         <div className='intro'>
-          <h2>Hello I'm Eto Olei,</h2>
-          <h2>I build for the Web</h2>
+          <h1>Hello I'm Eto Olei, <br /><span>I build for the Web</span></h1>
           <p>
             I am a Software developer, based in Lagos. i spend time building amazing websites, applications and everything in between
           </p>
