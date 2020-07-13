@@ -25,7 +25,8 @@ export const StyledPitchSlate = styled.section`
     .picture{
       position: relative;
       /* width: 50%; */
-      height: 34vmax;
+      width: 28.5vmax;
+      height: 33.5vmax;
       /* border: 1px solid ${({ theme }) => theme.lightColor}; */
 
       div:nth-of-type(1){
@@ -76,16 +77,17 @@ export const StyledPitchSlate = styled.section`
       .pattern1{
         position: absolute;
         /* margin-left: -0.9rem; */
-        margin-top: -2.5rem;
+        top: -2.35rem;
+        left: -2.35rem;
         height: 10rem;
         width: auto;
       }
       .pattern2{
         position: absolute;
         /* margin: 21.25rem 0  0 27.25rem; */
-        margin: 21.85vw 0  0 28.75vw;
-        top:10;
-        left:26;
+        /* margin: 21.85vw 0  0 28.75vw; */
+        right:-2.35rem;
+        bottom:-2.35rem;
         height: 15rem;
         width: auto; 
       }
@@ -104,13 +106,15 @@ export const StyledPitchSlate = styled.section`
           transition: all 0.3s linear;
         }
         .pattern1{
-          margin-top: -2.35rem;
-          margin-left: 0.15rem;
+          top: -2rem;
+          left: -2rem;
           transition: all 0.3s linear;
         }
         .pattern2{
           /* margin: 21.85vw 0  0 28.75vw; */
-          margin: 21vw 0  0 28vw;
+          /* margin: 21vw 0  0 28vw; */
+          bottom: -2rem;
+          right: -2rem;
           transition: all 0.3s linear;
         }
       }

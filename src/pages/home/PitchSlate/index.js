@@ -14,12 +14,16 @@ export const PitchSlate = () => {
           </p>
         </div>
         <div className='picture'>
-          <div></div>
-          <Pattern1 className='pattern1' data-shape />
-          <div></div>
-          <Pattern2 className='pattern2' data-shape />
+          <div>
+            <Pattern1 className='pattern1' data-shape />
+          </div>
+          <div>
+            <Pattern2 className='pattern2' data-shape />
+          </div>
           <span className='ketchup' aria-label='Photo of Eto' role='img' />
-          <div></div>
+          <div>
+
+          </div>
         </div>
       </div>
     </StyledPitchSlate>
