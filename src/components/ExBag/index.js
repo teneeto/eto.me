@@ -11,9 +11,11 @@ export const ExBag = ({ name, reverse }) => {
 
       <div className='wrapper'>
         <div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
         <div>
           <div>

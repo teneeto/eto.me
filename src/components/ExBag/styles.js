@@ -25,9 +25,14 @@ export const StyledExBag = styled.div`
     
     & > div {
       :first-child{
-        position: relative;
+        display: flex;
+        align-items: center;
         flex: 2 1 64%;
         & > div{
+          position: relative;
+          width: 26vmax;
+          height: 22vmax;
+          & > div{
           position: absolute;
           background-color: ${({ theme }) => theme.lightGreyColor};
           box-shadow: 0px 2px 4px #00000029;
@@ -38,13 +43,14 @@ export const StyledExBag = styled.div`
             
           }
           :nth-of-type(2){
-            left: 40%;
-            top: -10%;
+            left: 80%;
+            top: -15%;
           }
           :last-child{
-            left: 20%;
-            bottom: -5%;
+            left: 40%;
+            bottom: -15%;
           }
+        }
         }
       }
       :last-child{
