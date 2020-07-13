@@ -1,12 +1,51 @@
 import React, { Fragment } from 'react'
 
-import { Header } from '../../components';
+import { StyledAbout } from './About.styled';
+import { Header, Footer, ImageFrame } from '../../components';
 
 export const About = () => {
   return (
     <Fragment>
       <Header />
+      <StyledAbout>
+        <div>
+          <h2>About Me</h2>
+        </div>
 
-    </Fragment>
+        <article>
+          <div>
+            <ImageFrame />
+          </div>
+          <div>
+            <div>
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi audantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunot explicabo. Nemo ernim ipsam.
+              </p>
+              <p>
+                audantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunot explicabo. Nemo ernim ipsam.
+              </p>
+              <p>
+                audantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunot explicabo. Nemo ernim ipsam.
+              </p>
+              <p>
+                These are the tools I work with:
+              </p>
+
+              <div>
+                <ul>
+                  <li><div />HTML</li>
+                  <li><div />ReactJS</li>
+                  <li><div />SASS</li>
+                  <li><div />CSS</li>
+                  <li><div />NodeJS</li>
+                  <li><div />VueJS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </StyledAbout>
+      <Footer />
+    </Fragment >
   )
 }

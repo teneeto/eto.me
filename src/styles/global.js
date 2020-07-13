@@ -61,7 +61,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   p{
-    font-size: 1.172rem;
+    font-size: 1.15rem;
     color: ${({ theme }) => theme.lightColor};
     opacity: 0.7;
   }

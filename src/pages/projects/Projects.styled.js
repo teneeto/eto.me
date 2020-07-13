@@ -28,7 +28,12 @@ export const StyledProjects = styled.section`
   }
 
   article{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 8rem;
     & > div{
+      border-radius: 10px;
       & > div {
         :nth-of-type(2){
           display: flex;
@@ -40,14 +45,7 @@ export const StyledProjects = styled.section`
   }
 
   .normal-exp{
-    display: flex;
-    width: 85%;
-    margin: auto;
-    margin-bottom: 8rem;
-
     & > div{
-      border-radius: 10px;
-
       :first-child{
         position: relative;
         background-color: yellow;
@@ -114,14 +112,7 @@ export const StyledProjects = styled.section`
   }
 
   .flipped-exp{
-    display: flex;
-    width: 85%;
-    margin: auto;
-    margin-bottom: 8rem;
-
     & > div{
-      border-radius: 10px;
-
       :first-child{
         position: relative;
         display: grid;
