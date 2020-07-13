@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const StyledFooter = styled.section`
   display: flex;
   align-items: center;
+  scroll-snap-align: ${({ home }) => home ? 'start' : 'none'};
+  scroll-snap-stop: ${({ home }) => home ? 'always ' : 'normal'};
   background: ${({ theme }) => theme.PrimaryColor};
   color: #FF8900;
   font-size: calc(1rem + 1.5vmin);

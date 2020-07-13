@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { bool } from 'prop-types'
 
 import { StyledLink } from '..';
 import { StyledFooter } from './styles';
 
-export const Footer = () => {
+export const Footer = ({ home }) => {
   return (
-    <StyledFooter>
+    <StyledFooter home={home}>
       <div className='wrapper'>
         <div className='contact'>
           <div>
@@ -57,4 +58,8 @@ export const Footer = () => {
       </div>
     </StyledFooter >
   )
+}
+
+StyledFooter.propTypes = {
+  home: bool.isRequired
 }

@@ -63,6 +63,7 @@ export const GlobalStyles = createGlobalStyle`
   p{
     font-size: 1.172rem;
     color: ${({ theme }) => theme.lightColor};
+    opacity: 0.7;
   }
   h2{
     font-size: 3.125rem;

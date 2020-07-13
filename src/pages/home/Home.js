@@ -32,7 +32,7 @@ const Home = () => {
 			</main>
 
 			<Element name='footer'>
-				<Footer />
+				<Footer home />
 			</Element>
 		</Fragment>
 	)
