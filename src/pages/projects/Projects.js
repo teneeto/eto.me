@@ -2,9 +2,11 @@ import React, { Fragment } from 'react';
 
 import { BsArrowRight } from 'react-icons/bs';
 import { ReactComponent as Pattern1 } from '../../assets/Pattern1.svg';
-import { Header, Footer } from '../../components';
+import { Header, Footer, ReloadToTop } from '../../components';
 import { StyledProjects } from './Projects.styled';
 export const Projects = () => {
+  ReloadToTop();
+
   return (
     <Fragment>
       <Header />

@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react'
 
 import { StyledAbout } from './About.styled';
-import { Header, Footer, ImageFrame } from '../../components';
+import { Header, Footer, ImageFrame, ReloadToTop } from '../../components';
 
 export const About = () => {
+  ReloadToTop();
+
   return (
     <Fragment>
       <Header />

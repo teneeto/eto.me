@@ -59,7 +59,3 @@ export const Footer = ({ home }) => {
     </StyledFooter >
   )
 }
-
-StyledFooter.propTypes = {
-  home: bool.isRequired
-}

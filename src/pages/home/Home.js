@@ -1,21 +1,19 @@
-import React, { Fragment, useEffect, useContext } from 'react';
+import React, { Fragment, useContext } from 'react';
 import { Element } from 'react-scroll'
 
 import { PitchSlate } from './PitchSlate';
 import { Projects } from './Projects';
 import { Contact } from './Contact';
-import { Header, Footer, Scroll } from '../../components';
+import { Header, Footer, Scroll, ReloadToTop } from '../../components';
 import { getContext } from '../../store';
 
 const Home = () => {
 	const [state] = useContext(getContext)
-
-	useEffect(() => {
-	}, [])
+	ReloadToTop();
 
 	return (
 		<Fragment>
-			<Header home />
+			<Header home={true} />
 			<Scroll visible={state.sections} />
 			<main>
 				<Element name='pitchslate'>
@@ -32,7 +30,7 @@ const Home = () => {
 			</main>
 
 			<Element name='footer'>
-				<Footer home />
+				<Footer home={true} />
 			</Element>
 		</Fragment>
 	)

@@ -8,7 +8,6 @@ import { StyledMenu } from './Menu.styled';
 const Menu = ({ open, home }) => {
   return (
     <StyledMenu open={open}>
-
       <div>
         <ul>
           {home && <li>
@@ -63,6 +62,5 @@ const Menu = ({ open, home }) => {
 }
 Menu.propTypes = {
   open: bool.isRequired,
-  home: bool.isRequired,
 }
 export default Menu;
