@@ -1,34 +1,42 @@
 // Menu.js
 import React from 'react';
 import { bool } from 'prop-types';
-import { Link as ScrollLink } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll';
 
+import { StyledLink } from '../../../components';
 import { StyledMenu } from './Menu.styled';
-const Menu = ({ open }) => {
+const Menu = ({ open, home }) => {
   return (
     <StyledMenu open={open}>
 
       <div>
         <ul>
-          <li>
+          {home && <li>
             <ScrollLink to='pitchslate' spy={true} smooth={true} duration={5} offset={-400} >
               <span></span>
                   Home
-                </ScrollLink>
-          </li>
+            </ScrollLink>
+          </li>}
+
+          {!home && <li>
+            <StyledLink to='/' >
+              <span></span>
+                  Home
+            </StyledLink>
+          </li>}
 
           <li>
-            <ScrollLink to='about' spy={true} smooth={true} duration={5} offset={-400} >
+            <StyledLink to='/about' >
               <span></span>
                   About
-               </ScrollLink>
+               </StyledLink>
           </li>
 
           <li>
-            <ScrollLink to='projects' spy={true} smooth={true} duration={5} offset={-400} >
+            <StyledLink to='/projects'>
               <span></span>
                   Projects
-                </ScrollLink>
+                </StyledLink>
           </li>
         </ul>
         <div>

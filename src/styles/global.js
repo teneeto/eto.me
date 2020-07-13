@@ -57,6 +57,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    overflow: hidden;
   }
 
   p{

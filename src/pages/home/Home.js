@@ -3,9 +3,8 @@ import { Element } from 'react-scroll'
 
 import { PitchSlate } from './PitchSlate';
 import { Projects } from './Projects';
-import { Footer } from './Footer';
 import { Contact } from './Contact';
-import { Header, Scroll } from '../../components';
+import { Header, Footer, Scroll } from '../../components';
 import { getContext } from '../../store';
 
 const Home = () => {
@@ -16,7 +15,7 @@ const Home = () => {
 
 	return (
 		<Fragment>
-			<Header visible={state.sections} />
+			<Header home />
 			<Scroll visible={state.sections} />
 			<main>
 				<Element name='pitchslate'>

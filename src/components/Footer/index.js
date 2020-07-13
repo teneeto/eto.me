@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link as ScrollLink } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll';
 
+import { StyledLink } from '..';
 import { StyledFooter } from './styles';
 
 export const Footer = () => {
@@ -25,17 +26,17 @@ export const Footer = () => {
               </li>
 
               <li>
-                <ScrollLink to='about' spy={true} smooth={true} duration={5} offset={-400} >
+                <StyledLink to='/about' >
                   <span></span>
                   About
-               </ScrollLink>
+               </StyledLink>
               </li>
 
               <li>
-                <ScrollLink to='projects' spy={true} smooth={true} duration={5} offset={-400} >
+                <StyledLink to='/projects'>
                   <span></span>
                   Projects
-                </ScrollLink>
+                </StyledLink>
               </li>
             </ul>
           </div>
