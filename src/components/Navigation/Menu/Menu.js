@@ -54,7 +54,7 @@ const Menu = ({ open, home }) => {
           <li><span></span> <a href='https://twitter.com/teneetoe' target='_blank' rel='noopener noreferrer'>TW</a></li>
           <li><span></span> <a href='https://github.com/teneeto' target='_blank' rel='noopener noreferrer'>GH</a></li>
           <li><span></span> <a href='https://linkedin.com/in/teneeto' target='_blank' rel='noopener noreferrer'>LN</a></li>
-          <li><span></span> <a href='https://instagram.com/teneeto' target='_blank' rel='noopener noreferrer'>IG</a></li>
+          {/* <li><span></span> <a href='https://instagram.com/teneeto' target='_blank' rel='noopener noreferrer'>IG</a></li> */}
         </ul>
       </div>
     </StyledMenu>

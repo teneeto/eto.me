@@ -11,16 +11,16 @@ export const Projects = () => {
     <Fragment>
       <Header />
       <StyledProjects>
-        <div>
+        <div className='toTop2'>
           <h2>My Projects</h2>
         </div>
 
 
         <article className='normal-exp'>
-          <div>
+          <div className='toTop3'>
             <Pattern1 className='pattern1' data-shape />
           </div>
-          <div>
+          <div className='toTop4'>
             <h3>Project Name </h3>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi audantium, totam rem aperiam,
@@ -40,7 +40,7 @@ export const Projects = () => {
           </div>
         </article>
 
-        <article className='flipped-exp'>
+        <article className='flipped-exp toTop4'>
           <div>
             <h3>Project Name</h3>
             <p>

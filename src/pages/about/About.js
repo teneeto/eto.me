@@ -10,15 +10,15 @@ export const About = () => {
     <Fragment>
       <Header />
       <StyledAbout>
-        <div>
+        <div className='toTop2'>
           <h2>About Me</h2>
         </div>
 
         <article>
-          <div>
+          <div className='toTop3' >
             <ImageFrame />
           </div>
-          <div>
+          <div className='toTop4'>
             <div>
               <p>
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi audantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunot explicabo. Nemo ernim ipsam.

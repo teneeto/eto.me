@@ -1,7 +1,53 @@
 // global.js
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, keyframes } from 'styled-components';
 import PoppinsRegular from '../assets/fonts/Poppins/Poppins-Regular.ttf';
 import PoppinsSemiBold from '../assets/fonts/Poppins/Poppins-SemiBold.ttf';
+
+const faintIn = keyframes`
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+`
+
+const toTop1 = keyframes`
+	from {
+		opacity: 0;
+		transform: translateY(0.5rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+`
+
+const toTop2 = keyframes`
+	from {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+`
+
+const toTop3 = keyframes`
+	from {
+		opacity: 0;
+		transform: translateY(1.5rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+`
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -87,5 +133,22 @@ export const GlobalStyles = createGlobalStyle`
         background-position: right bottom;
         transition: all 300ms linear;
       } 
+  }
+
+  .faintIn{
+    animation: 0.5s ${faintIn} forwards;
+  }
+
+  .toTop1{
+    animation: 0.75s ${toTop1} forwards;
+  }
+  .toTop2{
+    animation: 1s ${toTop2} forwards;
+  }
+  .toTop3{
+    animation: 1.25s ${toTop3} forwards;
+  }
+  .toTop4{
+    animation: 1.5s ${toTop3} forwards;
   }
 `;

@@ -8,7 +8,7 @@ export const Header = ({ home }) => {
   const node = useRef();
   useOnClickOutside(node, () => setOpen(false));
   return (
-    <StyledHeader >
+    <StyledHeader className='faintIn'>
       <StyledLink to='/'>
         <h1>Eto Olei</h1>
       </StyledLink>
