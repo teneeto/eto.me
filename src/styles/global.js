@@ -79,10 +79,11 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0.8rem;
     background: linear-gradient(to right, #FF8900  50%, transparent 50%);
     background-size: 200% 100%;
-    border: 1px solid ${({ theme }) => theme.greyColor};
     cursor: pointer;
 
       :hover{
+        box-shadow: none;
+        border: 2px solid ${({ theme }) => theme.greyColor};
         background-position: right bottom;
         transition: all 300ms linear;
       } 

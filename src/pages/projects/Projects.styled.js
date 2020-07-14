@@ -172,6 +172,7 @@ export const StyledProjects = styled.section`
         .pattern1{
           position: absolute;
           margin-top: -1.5rem;
+          margin-left: -1.5rem;
           height: 10rem;
           width: auto;
         }
