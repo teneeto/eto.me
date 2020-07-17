@@ -11,7 +11,7 @@ export const PitchSlate = () => {
           <h1 className='toTop1'>Hello I'm Eto Olei,</h1>
           <h1 className='toTop2'><span >I build for the Web</span></h1>
           <p className='toTop3'>
-            I am a Software developer, based in Lagos. i spend time building amazing websites, applications and everything in between
+            I am a Software developer, based in Lagos. i spend time building amazing websites, applications and everything in between.
           </p>
         </div>
         <div className='picture toTop4'>

@@ -27,15 +27,27 @@ export const StyledExBag = styled.div`
     border-radius: 10px;
     box-shadow: 0px 1px 4px #00000029;
     
+    @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+      flex-direction: column;
+    }
+
     & > div {
       :first-child{
         display: flex;
         align-items: center;
         flex:  64%;
+        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+          margin-bottom: 7rem;
+        }
+        
         & > div{
           position: relative;
           width: 26vmin;
           height: 22vmax;
+
+          @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+            width: 26vmax;
+          }
           & > div{
           position: absolute;
           background-color: ${({ theme }) => theme.lightGreyColor};
@@ -68,6 +80,9 @@ export const StyledExBag = styled.div`
             /* width: 50%; */
             padding-left: 1.5rem;
             padding-right: 1.5rem;
+            @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+              width: 100%;
+            }
           }
         }
       }

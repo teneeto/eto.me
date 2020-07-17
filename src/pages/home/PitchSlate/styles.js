@@ -7,7 +7,7 @@ export const StyledPitchSlate = styled.section`
   @media screen and (max-width: ${({ theme }) => theme.desktop}) {
     padding: 1.5rem  4.75vw 0  4.75vw ;
   }
-  
+
   .container{
     display: flex;
     align-items:center;
@@ -17,16 +17,27 @@ export const StyledPitchSlate = styled.section`
     @media screen and (max-width: ${({ theme }) => theme.desktop}) {
       padding: 0 ;
     }
+    @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+      flex-direction: column-reverse;
+    }
 
     .intro{
       width: 50%;
       /* border: 1px solid ${({ theme }) => theme.lightColor}; */
       color: ${({ theme }) => theme.lightColor};
 
+      @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+        width: 100%;
+        text-align: center;
+      }
+
       h1{
         font-size: 3.42rem;
         span{
           color: ${({ theme }) => theme.accentColor};
+        }
+        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+          font-size: 3rem;
         }
       }
     }
@@ -36,6 +47,11 @@ export const StyledPitchSlate = styled.section`
       width: 28.5vmax;
       height: 33.5vmax;
       /* border: 1px solid ${({ theme }) => theme.lightColor}; */
+
+      @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+        margin-left: -7rem;
+        margin-bottom: 7rem;
+      }
 
       div:nth-of-type(1){
         position: absolute;

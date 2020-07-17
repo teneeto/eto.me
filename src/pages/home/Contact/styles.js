@@ -5,7 +5,6 @@ export const StyledContact = styled.section`
   align-items: center;
   justify-content: center;
   color: ${({ theme }) => theme.lightColor};
-  
 
   & > div {
     display: flex;
@@ -15,6 +14,9 @@ export const StyledContact = styled.section`
     
     @media screen and (max-width: ${({ theme }) => theme.desktop}) {
       width: 50%;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+      width: 85%;
     }
 
     h2{

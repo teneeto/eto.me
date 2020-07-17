@@ -73,6 +73,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html, body{
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    
     /* Enable Safari touch scrolling physics which is needed for scroll snap */
     -webkit-overflow-scrolling: touch;
 
@@ -118,6 +123,10 @@ export const GlobalStyles = createGlobalStyle`
       scroll-snap-stop: normal;
       height: auto;
       margin-top: 15rem;
+    }
+
+    @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+      margin-top: 10rem;
     }
   }
 
