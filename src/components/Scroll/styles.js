@@ -20,6 +20,10 @@ export const StyledScroll = styled.div`
     outline: none;
   }
 
+  @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+    display: none;
+  }
+
   div {
     width: 0.75rem;
     height: 0.75rem;

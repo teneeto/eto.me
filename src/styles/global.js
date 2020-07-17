@@ -80,6 +80,13 @@ export const GlobalStyles = createGlobalStyle`
     
     /* Hide scrollbar for IE and Edge */
     -ms-overflow-style: none;
+
+    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+        font-size: 80%; 
+    }
+    @media screen and (max-width: ${({ theme }) => theme.tablet}) {
+        font-size: 60%; 
+    }
   }
   
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -103,7 +110,15 @@ export const GlobalStyles = createGlobalStyle`
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    overflow: hidden;
+    /* overflow: hidden; */
+
+    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+      padding: 1.5rem 0 ;
+      scroll-snap-align: none;
+      scroll-snap-stop: normal;
+      height: auto;
+      margin-top: 15rem;
+    }
   }
 
   p{

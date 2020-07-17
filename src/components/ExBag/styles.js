@@ -10,6 +10,10 @@ export const StyledExBag = styled.div`
   height: 100%;
   color: ${({ theme }) => theme.lightColor};
 
+  @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+    width: 100%;
+  }
+
   h2{
     margin-bottom: 2rem;
   }
@@ -27,10 +31,10 @@ export const StyledExBag = styled.div`
       :first-child{
         display: flex;
         align-items: center;
-        flex: 2 1 64%;
+        flex:  64%;
         & > div{
           position: relative;
-          width: 26vmax;
+          width: 26vmin;
           height: 22vmax;
           & > div{
           position: absolute;
@@ -56,7 +60,7 @@ export const StyledExBag = styled.div`
       :last-child{
         display: flex;
         align-items:center;
-        flex: 1 2 36%;
+        flex: 36%;
         padding-left: 1.5rem;
         & > div{
           button{

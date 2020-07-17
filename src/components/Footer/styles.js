@@ -10,12 +10,18 @@ export const StyledFooter = styled.section`
   font-size: calc(1rem + 1.5vmin);
   font-weight: 600;
 
-  ul{
+  @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  a{
+
+  a {
     text-decoration: none;
     color: inherit;
   }
@@ -28,6 +34,11 @@ export const StyledFooter = styled.section`
     height: 60%;
     margin: auto;
 
+    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+      padding: 0  4.75vw 0  4.75vw ;
+      width:100%;
+    }
+
     div:first-of-type{
       display: flex;
 
@@ -37,7 +48,7 @@ export const StyledFooter = styled.section`
         align-items: flex-start;
         width:45%;
         
-        h3{
+        h3 {
           font-size:calc(0.5rem + 1.5vmin);
           font-weight:550;
         }

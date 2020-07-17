@@ -5,15 +5,21 @@ export const StyledContact = styled.section`
   align-items: center;
   justify-content: center;
   color: ${({ theme }) => theme.lightColor};
+  
 
   & > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 28rem;
+    
+    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+      width: 50%;
+    }
 
     h2{
-      font-size: 50px;
+      margin-bottom: 2rem;
+      text-align: center;
     }
 
     p{

@@ -3,12 +3,20 @@ const ketchup = require('../../../assets/ketchup.jpg');
 
 export const StyledPitchSlate = styled.section`
   background: ${({ theme }) => theme.primaryColor};
+
+  @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+    padding: 1.5rem  4.75vw 0  4.75vw ;
+  }
   
   .container{
     display: flex;
     align-items:center;
     /* border: 1px solid ${({ theme }) => theme.lightColor}; */
     height: 100%;
+    
+    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+      padding: 0 ;
+    }
 
     .intro{
       width: 50%;
