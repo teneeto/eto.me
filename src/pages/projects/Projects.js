@@ -23,7 +23,7 @@ export const Projects = () => {
           <div className='toTop4'>
             <h3>Project Name </h3>
             <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi audantium, totam rem aperiam,
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
             </p>
             <div>
               <ul>
@@ -44,7 +44,7 @@ export const Projects = () => {
           <div>
             <h3>Project Name</h3>
             <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi audantium, totam rem aperiam,
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
             </p>
             <div>
               <ul>
@@ -71,7 +71,7 @@ export const Projects = () => {
           <div>
             <h3>Project Name </h3>
             <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi audantium, totam rem aperiam,
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
             </p>
             <div>
               <ul>
@@ -88,11 +88,11 @@ export const Projects = () => {
           </div>
         </article>
 
-        <article className='flipped-exp'>
+        <article className='flipped-exp toTop4'>
           <div>
             <h3>Project Name</h3>
             <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi audantium, totam rem aperiam,
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
             </p>
             <div>
               <ul>

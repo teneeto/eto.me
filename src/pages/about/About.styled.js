@@ -19,14 +19,27 @@ export const StyledAbout = styled.section`
     width: 85%;
     margin: auto;
     margin-bottom: 8rem;
-    & > div{
 
+    @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+      flex-direction: column;
+      align-items: center;
+    }
+    & > div{
       :first-child{
         width: 50%;
+        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+          display:flex;
+          justify-content: center;
+          width: 100%;
+          margin-bottom: 5rem;
+        }
       }
 
       :last-child{
         width: 50%;
+        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+          width: 100%;
+        }
         p{
           margin-bottom: 1.5rem;
         }

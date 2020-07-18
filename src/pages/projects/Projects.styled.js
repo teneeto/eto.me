@@ -52,6 +52,9 @@ export const StyledProjects = styled.section`
         height: 26.5rem;
         min-width: 60%;
         background: #C9C9C9 0% 0% no-repeat padding-box;
+        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+            width: 100%;
+          }
 
         .pattern1{
           position: absolute;
@@ -75,8 +78,22 @@ export const StyledProjects = styled.section`
         padding: 1rem;
         text-align: right;
 
+        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+            position: absolute;
+            align-self: flex-end;
+            width: calc(100% - 7rem);
+            margin-left: 0;
+            opacity: 0.9 !important;
+        }
+        @media screen and (max-width: ${({ theme }) => theme.miniMobile}) {
+            width: calc(100% - 6.25rem);
+        }
+
         p{
           font-size: 0.8rem;
+          @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+              font-size: 1rem;
+          }
         }
         h3{
           font-size: 1.5rem;
@@ -85,8 +102,14 @@ export const StyledProjects = styled.section`
           :nth-of-type(1){
             color: ${({ theme }) => theme.lighterPrimaryColor};
             font-size: 0.7rem;
+            @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+              font-size: 0.91rem;
+            }
 
             ul{
+              @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+                font-size: 1.3rem;
+              }
               display: flex;
               justify-content: flex-end;
               list-style: none;
@@ -116,6 +139,7 @@ export const StyledProjects = styled.section`
       :first-child{
         position: relative;
         display: grid;
+        align-items: center;
         align-self: center;
         background-color: ${({ theme }) => theme.lightPrimaryColor};
         box-shadow: 6px 5px 20px #00000065;
@@ -124,9 +148,18 @@ export const StyledProjects = styled.section`
         margin-right: -6rem;
         padding: 1rem;
         z-index: 1;
+        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+            position: absolute;
+            align-self: flex-end;
+            width: calc(100%);
+            opacity: 0.9 !important;
+          }
 
         p{
           font-size: 0.8rem;
+          @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+              font-size: 1rem;
+          }
         }
 
         h3{
@@ -137,8 +170,14 @@ export const StyledProjects = styled.section`
           :nth-of-type(1){
             color: ${({ theme }) => theme.lighterPrimaryColor};
             font-size: 0.7rem;
+            @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+              font-size: 0.91rem;
+            }
 
             ul{
+              @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+                font-size: 1.3rem;
+              }
               display: flex;
               list-style: none;
               padding: 0;
@@ -168,6 +207,9 @@ export const StyledProjects = styled.section`
         height: 26.5rem;
         min-width: 60%;
         background: #C9C9C9 0% 0% no-repeat padding-box;
+        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+            width: 100%;
+          }
 
         .pattern1{
           position: absolute;

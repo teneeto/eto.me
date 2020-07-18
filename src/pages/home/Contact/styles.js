@@ -34,6 +34,9 @@ export const StyledContact = styled.section`
     form{
       width: 100%;
       font-size: 0.75rem;
+      @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+      font-size: 0.98rem;
+    }
       div{
         display: flex;
         flex-direction:column;

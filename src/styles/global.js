@@ -134,6 +134,9 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.15rem;
     color: ${({ theme }) => theme.lightColor};
     opacity: 0.7;
+    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+      font-size: 1.5rem;
+    }
   }
   h2{
     font-size: 3.125rem;

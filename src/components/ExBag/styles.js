@@ -42,11 +42,14 @@ export const StyledExBag = styled.div`
         
         & > div{
           position: relative;
-          width: 26vmin;
+          width: 26vmax;
           height: 22vmax;
 
+          @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+            width: 26vmin;
+          }
           @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
-            width: 26vmax;
+            width: 22vmax;
           }
           & > div{
           position: absolute;
