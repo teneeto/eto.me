@@ -101,6 +101,7 @@ export const StyledProjects = styled.section`
             ul{
               display: flex;
               justify-content: flex-end;
+              flex-wrap: wrap;
               list-style: none;
               margin: 0px;
               li:not(:last-of-type){
@@ -162,6 +163,7 @@ export const StyledProjects = styled.section`
 
             ul{
               display: flex;
+              flex-wrap: wrap;
               list-style: none;
               padding: 0px;
               margin: 0px;

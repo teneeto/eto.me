@@ -19,5 +19,8 @@ const Wrapper = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
     width: 100%;
     height: 20rem;
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
   }
 `
