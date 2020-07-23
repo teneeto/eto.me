@@ -42,7 +42,7 @@ const Menu = ({ open, home }) => {
           <h3>Contact Me</h3>
           <div>
             <span></span>
-            <a href='mailto:mail@eto.me'>mail@eto.me</a>
+            <a href='mailto:oleietotaziba@gmail.com'>oleietotaziba@gmail.com</a>
           </div>
         </div>
       </div>
