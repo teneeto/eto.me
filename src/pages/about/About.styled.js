@@ -30,7 +30,7 @@ export const StyledAbout = styled.section`
 
       & > div{
         :first-child{
-          @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+          @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
             display:flex;
             justify-content: center;
             width: 100%;
@@ -39,7 +39,7 @@ export const StyledAbout = styled.section`
         }
 
         :last-child{
-          @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+          @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
             width: 100%;
           }
           p{
@@ -51,9 +51,14 @@ export const StyledAbout = styled.section`
               min-width: 60%;
               display: grid;
               grid-template-columns: repeat(3, 1fr);
+              
               row-gap: 1rem;
               list-style: none;
               padding: 0;
+
+              @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+                grid-template-columns: repeat(2, 1fr);
+              }
               li:not(:last-of-type){
                 
                 margin-right: 1rem;

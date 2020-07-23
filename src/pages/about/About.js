@@ -76,8 +76,6 @@ export const About = () => {
                     <li><div />Responsive Web Design</li>
                     <li><div />SEO Compliant</li>
 
-
-
                   </ul>
                 </div>
               </div>
