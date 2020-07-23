@@ -5,14 +5,21 @@ export const StyledFooter = styled.section`
   align-items: center;
   scroll-snap-align: ${({ home }) => home ? 'start' : 'none'};
   scroll-snap-stop: ${({ home }) => home ? 'always ' : 'normal'};
-  background: ${({ theme }) => theme.PrimaryColor};
-  color: #FF8900;
-  font-size: calc(1rem + 1.5vmin);
-  font-weight: 600;
+  color: ${({ theme }) => theme.accentColor};
+  font-size: ${({ theme }) => theme.fsSubheading};
+  font-family:'PoppinsSemiBold',sans-serif ;
+
+  @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+      font-size: 1.1rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.smMobile}) {
+      font-size: 0.9rem;
+    }
 
   @media screen and (max-width: ${({ theme }) => theme.desktop}) {
     scroll-snap-align: none;
     scroll-snap-stop: normal;
+    margin-bottom: -7rem;
   }
 
   ul {
@@ -30,14 +37,10 @@ export const StyledFooter = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 85%;
+    max-width: ${({ theme }) => theme.contentMaxWidth};
+    width: 100%;
     height: 60%;
     margin: auto;
-
-    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-      padding: 0  4.75vw 0  4.75vw ;
-      width:100%;
-    }
 
     div:first-of-type{
       display: flex;

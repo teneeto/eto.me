@@ -19,7 +19,10 @@ export const StyledMenu = styled.nav`
   font-size: calc(1rem + 1.5vmin);
   font-weight: 600;
   
-  @media (max-width: ${({ theme }) => theme.mobile}) {
+  @media (max-width: ${({ theme }) => theme.lgTablet}) {
+    width: 60%;
+  }
+  @media (max-width: ${({ theme }) => theme.lgMobile}) {
     width: 100%;
   }
 

@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
-export const StyledHeader = styled.header`
-  display: flex;
-  justify-content: space-between;
+export const StyledHeader = styled.nav`
   position: fixed;
-  top: 0; /* initialy nothing */
-  padding: 1.5rem  4.75vw 0  4.75vw ; /* initialy 0.35rem 4.75vw */
+  top: 0; 
   width: 100%;
-  z-index:999;
+  z-index:99;
   background-color:${({ theme }) => theme.primaryColor};
-  
-  
-  h1{
-    color: ${({ theme }) => theme.accentColor}; 
+
+  .nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1312px;
+    margin: auto;
+    padding: 1.5rem  0.5rem;
   }
 `

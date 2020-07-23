@@ -9,12 +9,14 @@ export const Header = ({ home }) => {
   useOnClickOutside(node, () => setOpen(false));
   return (
     <StyledHeader className='faintIn'>
-      <StyledLink to='/'>
-        <h1>Eto Olei</h1>
-      </StyledLink>
-      <div ref={node}>
-        <Menu home={home} open={open} setOpen={setOpen} />
-        <Burger open={open} setOpen={setOpen} />
+      <div className='nav-wrapper'>
+        <StyledLink to='/'>
+          <h3 className='brand'>Eto Olei</h3>
+        </StyledLink>
+        <div ref={node}>
+          <Menu home={home} open={open} setOpen={setOpen} />
+          <Burger open={open} setOpen={setOpen} />
+        </div>
       </div>
     </StyledHeader>
   )

@@ -1,7 +1,6 @@
 // global.js
 import { createGlobalStyle, keyframes } from 'styled-components';
-import PoppinsRegular from '../assets/fonts/Poppins/Poppins-Regular.ttf';
-import PoppinsSemiBold from '../assets/fonts/Poppins/Poppins-SemiBold.ttf';
+import './fonts.css';
 
 const faintIn = keyframes`
 	from {
@@ -50,34 +49,18 @@ const toTop3 = keyframes`
 `
 
 export const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Poppins Regular'),local('Poppins-Regular'),
-        url(${PoppinsRegular}) format('truetype');
-  }
 
-  @font-face {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: local('Poppins SemiBold'),local('Poppins-SemiBold'),
-        url(${PoppinsSemiBold}) format('truetype');
-  }
-
-  * {
+  *{
     box-sizing: border-box;
   }
 
-  html, body{
-
+  html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    
+  }
+
+  html, body{
     /* Enable Safari touch scrolling physics which is needed for scroll snap */
     -webkit-overflow-scrolling: touch;
 
@@ -86,12 +69,7 @@ export const GlobalStyles = createGlobalStyle`
     /* Hide scrollbar for IE and Edge */
     -ms-overflow-style: none;
 
-    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-        font-size: 80%; 
-    }
-    @media screen and (max-width: ${({ theme }) => theme.tablet}) {
-        font-size: 60%; 
-    }
+    scroll-behavior:smooth;
   }
   
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -101,46 +79,130 @@ export const GlobalStyles = createGlobalStyle`
 
   body{
     background: ${({ theme }) => theme.primaryColor};
-    font-family: 'Poppins', sans-serif;
-    /* font-size: calc(10px + 1vmin); */
+    font-family: 'PoppinsRegular', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6, p, div, article, section{
+  h1, h2, h4, h5, h6{
+    font-family: 'PoppinsBold', sans-serif;
+  }
+  h3{
+    font-family: 'PoppinsSemiBold', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6, p, div,nav, article, section{
     margin: 0;
     padding: 0;
   }
 
+  h1{
+    font-size: ${({ theme }) => theme.fsIntro};
+    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+      font-size: 3.25rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.lgTablet}) {
+      font-size: 2.65rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.mdTablet}) {
+      font-size: 2.55rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.smTablet}) {
+      font-size: 2.35rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+      font-size: 2.65rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.mdMobile}) {
+      font-size: 2.15rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.smMobile}) {
+      font-size: 1.8rem;
+    }
+  }
+  h2{
+    font-size: ${({ theme }) => theme.fsHeading};
+    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+      font-size: 2.85rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.lgTablet}) {
+      font-size: 2.75rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.mdTablet}) {
+      font-size: 2.65rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.smTablet}) {
+      font-size: 2.55rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+      font-size: 2.35rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.mdMobile}) {
+      font-size: 2.15rem;
+    }
+  }
+  h3{
+    font-size: ${({ theme }) => theme.fsSubheading};
+    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+      font-size: 1.8rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.lgTablet}) {
+      font-size: 1.775rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.mdTablet}) {
+      font-size: 1.7rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.smTablet}) {
+      font-size: 1.675rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+      font-size: 1.6rem;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.mdMobile}) {
+      font-size: 1.575rem;
+    }
+  }
+  p{
+    font-size: ${({ theme }) => theme.fsText};
+    @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+
+    }
+  }
+  .article-heading{
+    font-size: ${({ theme }) => theme.fsArticleHeading};
+  }
+  .lg-text{
+    font-size: ${({ theme }) => theme.fsText};
+  }
+  .md-text{
+    font-size: ${({ theme }) => theme.fsMdText};
+  }
+  .sm-text{
+    font-size: ${({ theme }) => theme.fsSmText};
+  }
+  .brand{
+    font-family: 'AvenirNextHeavy', sans-serif;
+    color:${({ theme }) => theme.accentColor}
+  }
+  
   section {
-    padding: 1.5rem 4.75vw ;
+    max-width: ${({ theme }) => theme.bodyMaxWidth};
+    margin: 0 auto;
+    padding: 0 0.5rem;
     height: 100vh;
+    width: 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     /* overflow: hidden; */
 
     @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-      padding: 1.5rem 0 ;
       scroll-snap-align: none;
       scroll-snap-stop: normal;
       height: auto;
-      margin-top: 15rem;
+      margin: 10rem 0;
     }
+    @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+      margin: 7rem 0;
+    }
+  }
 
-    @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
-      margin-top: 10rem;
-    }
-  }
-
-  p{
-    font-size: 1.15rem;
-    color: ${({ theme }) => theme.lightColor};
-    opacity: 0.7;
-    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-      font-size: 1.5rem;
-    }
-  }
-  h2{
-    font-size: 3.125rem;
-  }
   input, button{
     border-radius: 5px;
   }

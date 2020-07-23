@@ -8,7 +8,7 @@ export const StyledProjects = styled.section`
   margin-top: 5rem;
 
   & > div{
-    width: 85%;
+    max-width: ${({ theme }) => theme.contentMaxWidth};
     margin: auto;
     margin-bottom: 2rem;
   }

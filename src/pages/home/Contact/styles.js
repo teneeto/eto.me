@@ -2,25 +2,17 @@ import styled from 'styled-components';
 
 export const StyledContact = styled.section`
   display: flex;
-  align-items: center;
-  justify-content: center;
   color: ${({ theme }) => theme.lightColor};
 
   & > div {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 28rem;
+    max-width: 28rem;
+    margin: auto;
     
-    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-      width: 50%;
-    }
-    @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
-      width: 85%;
-    }
 
     h2{
-      margin-bottom: 2rem;
+      margin-bottom: 0.5rem;
       text-align: center;
     }
 
@@ -33,10 +25,6 @@ export const StyledContact = styled.section`
 
     form{
       width: 100%;
-      font-size: 0.75rem;
-      @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-      font-size: 0.98rem;
-    }
       div{
         display: flex;
         flex-direction:column;
@@ -44,6 +32,7 @@ export const StyledContact = styled.section`
         
         label{
           color: ${({ theme }) => theme.greyColor};
+          font-size: ${({ theme }) => theme.fsSmText};
         }
         input[type="text"],
         input[type="email"],
@@ -65,7 +54,7 @@ export const StyledContact = styled.section`
         }
 
         textarea{
-          height: 20vh;
+          min-height: 20vh;
         }
       }
     }
