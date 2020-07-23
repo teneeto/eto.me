@@ -182,7 +182,7 @@ export const Projects = () => {
             </div>
             <div>
               <button>
-                <a href="https://hazontech.com" target="_blank" rel="noopener noreferrer">View Project </a>
+                <a href="/">View Project </a>
               </button>
             </div>
           </div>
