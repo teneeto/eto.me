@@ -29,7 +29,7 @@ export const About = () => {
                   I'm particular about building Responsive Web Presence with Applied Accessibility and Applied Visual Design with Mobile-Users inclusion and Considerations.
                 </p>
                 <p>
-                  I have worked with teams to build marketing websites to building solutions for businesses.
+                  I have worked with teams to build scalable and marketable products that are currently been used by a large number of users.
                 </p>
                 <p>
                   Currently brainstorming and building amazing Products for Hazon Technology
