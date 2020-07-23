@@ -9,7 +9,8 @@ export const StyledProjects = styled.section`
 
   & > div{
     max-width: ${({ theme }) => theme.contentMaxWidth};
-    margin: auto;
+    width: 100%;
+    margin:0 auto;
     margin-bottom: 2rem;
   }
 
@@ -29,7 +30,8 @@ export const StyledProjects = styled.section`
 
   article{
     display: flex;
-    width: 85%;
+    max-width: ${({ theme }) => theme.contentMaxWidth};
+    width: 100%;
     margin: auto;
     margin-bottom: 8rem;
     & > div{
@@ -52,9 +54,10 @@ export const StyledProjects = styled.section`
         height: 26.5rem;
         min-width: 60%;
         background: #C9C9C9 0% 0% no-repeat padding-box;
-        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
-            width: 100%;
-          }
+        @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+          width: 100%;
+          height: 20rem;
+        }
 
         .pattern1{
           position: absolute;
@@ -78,22 +81,19 @@ export const StyledProjects = styled.section`
         padding: 1rem;
         text-align: right;
 
-        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+        @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
             position: absolute;
             align-self: flex-end;
-            width: calc(100% - 7rem);
+            max-width: ${({ theme }) => theme.contentMaxWidth};
+            width: calc(100% - 2rem);
             margin-left: 0;
             opacity: 0.9 !important;
-        }
-        @media screen and (max-width: ${({ theme }) => theme.miniMobile}) {
-            width: calc(100% - 6.25rem);
+            height: auto;
+            row-gap: 0.5rem;
         }
 
         p{
           font-size: 0.8rem;
-          @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-              font-size: 1rem;
-          }
         }
         h3{
           font-size: 1.5rem;
@@ -102,17 +102,12 @@ export const StyledProjects = styled.section`
           :nth-of-type(1){
             color: ${({ theme }) => theme.lighterPrimaryColor};
             font-size: 0.7rem;
-            @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-              font-size: 0.91rem;
-            }
 
             ul{
-              @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-                font-size: 1.3rem;
-              }
               display: flex;
               justify-content: flex-end;
               list-style: none;
+              margin: 0px;
               li:not(:last-of-type){
                 width: fit-content;
                 margin-right:0.5rem;
@@ -148,18 +143,17 @@ export const StyledProjects = styled.section`
         margin-right: -6rem;
         padding: 1rem;
         z-index: 1;
-        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+        @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
             position: absolute;
             align-self: flex-end;
             width: calc(100%);
             opacity: 0.9 !important;
+            height: auto;
+            row-gap: 0.5rem;
           }
 
         p{
           font-size: 0.8rem;
-          @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-              font-size: 1rem;
-          }
         }
 
         h3{
@@ -170,17 +164,12 @@ export const StyledProjects = styled.section`
           :nth-of-type(1){
             color: ${({ theme }) => theme.lighterPrimaryColor};
             font-size: 0.7rem;
-            @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-              font-size: 0.91rem;
-            }
 
             ul{
-              @media screen and (max-width: ${({ theme }) => theme.desktop}) {
-                font-size: 1.3rem;
-              }
               display: flex;
               list-style: none;
-              padding: 0;
+              padding: 0px;
+              margin: 0px;
               li:not(:last-of-type){
                 width: fit-content;
                 margin-right:0.5rem;
@@ -207,8 +196,9 @@ export const StyledProjects = styled.section`
         height: 26.5rem;
         min-width: 60%;
         background: #C9C9C9 0% 0% no-repeat padding-box;
-        @media screen and (max-width: ${({ theme }) => theme.miniTablet}) {
+        @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
             width: 100%;
+            height: 20rem;
           }
 
         .pattern1{
