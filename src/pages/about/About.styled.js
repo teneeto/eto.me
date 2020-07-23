@@ -43,12 +43,12 @@ export const StyledAbout = styled.section`
             width: 100%;
           }
           p{
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
           }
           div{
-            
             ul{
-              width: 60%;
+              margin-bottom: 2.5rem;
+              min-width: 60%;
               display: grid;
               grid-template-columns: repeat(3, 1fr);
               row-gap: 1rem;

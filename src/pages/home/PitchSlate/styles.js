@@ -104,13 +104,18 @@ align-items: center;
         }
 
         .pattern2{
-          right:-1rem;
-          bottom:-1rem;
+          right:-2.35rem;
+          bottom:-2.35rem;
           width: 7vmax;
           height: 14vmax;
           background-size: cover;
           background-position-x: center;
           background-image: url(${pattern2});
+
+          @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+            right: -1rem;
+            bottom: -1rem;
+            }
         }
 
         &:hover{
