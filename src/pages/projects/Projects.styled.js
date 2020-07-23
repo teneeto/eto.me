@@ -13,7 +13,10 @@ export const StyledProjects = styled.section`
     margin:0 auto;
     margin-bottom: 2rem;
   }
-
+  a{
+    text-decoration: none;
+    color: ${({ theme }) => theme.accentColor};
+  }
   button{
     background: none;
     box-shadow: none;
@@ -21,9 +24,11 @@ export const StyledProjects = styled.section`
     padding: 0;
     color: inherit;
     margin-right: 0.25rem;
+    outline: none;
     cursor: pointer;
 
     &:hover{
+      border: none;
       transition: all 350ms ease-out;
     }
   }
@@ -49,16 +54,6 @@ export const StyledProjects = styled.section`
   .normal-exp{
     & > div{
       :first-child{
-        position: relative;
-        background-color: yellow;
-        height: 26.5rem;
-        min-width: 60%;
-        background: #C9C9C9 0% 0% no-repeat padding-box;
-        @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
-          width: 100%;
-          height: 20rem;
-        }
-
         .pattern1{
           position: absolute;
           right: 0;
@@ -191,15 +186,7 @@ export const StyledProjects = styled.section`
       }
 
       :last-child{
-        position: relative;
-        background-color: yellow;
-        height: 26.5rem;
-        min-width: 60%;
-        background: #C9C9C9 0% 0% no-repeat padding-box;
-        @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
-            width: 100%;
-            height: 20rem;
-          }
+
 
         .pattern1{
           position: absolute;
