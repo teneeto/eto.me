@@ -41,8 +41,6 @@ export const Projects = () => {
                 <li>Semantic UI</li>
                 <li>|</li>
                 <li>NodeJS</li>
-                <li>|</li>
-                <li>SalesJS</li>
               </ul>
             </div>
             <div>
