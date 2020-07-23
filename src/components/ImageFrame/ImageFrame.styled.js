@@ -5,6 +5,10 @@ export const StyledImageFrame = styled.div`
   position: relative;
   width: 28.5vmax;
   height: 33.5vmax;
+  @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+      width: 100%;
+      height: 20rem;
+  }
   & > div{
     position: absolute;
     background: #130221;
@@ -12,6 +16,10 @@ export const StyledImageFrame = styled.div`
     border-radius: 10px;
     width: 28.5vmax;
     height: 33.5vmax;
+    @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+        width: 93%;
+        height: 100%;
+      }
     :first-child{
       
         
