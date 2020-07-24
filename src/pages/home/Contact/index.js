@@ -10,15 +10,15 @@ export const Contact = () => {
           You have a question, a deal for me or just want to say hi?
           go ahead.
         </p>
-        <form>
+        <form action="https://formspree.io/xknqkzjj" method="POST">
           <div>
             <label htmlFor='name'>Your Name</label>
-            <input id='name' type='text' placeholder='Enter Your Name' />
+            <input id='name' name='name' type='text' placeholder='Enter Your Name' />
           </div>
 
           <div>
             <label htmlFor='email' >Your Email Address</label>
-            <input id='email' type='email' placeholder='Enter Your Email Address' />
+            <input id='email' name='_replyto' type='email' placeholder='Enter Your Email Address' />
           </div>
 
           <div>
