@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Element } from 'react-scroll'
 
 import { BsArrowRight } from 'react-icons/bs';
 import { ReactComponent as Pattern1 } from '../../assets/Pattern1.svg';
@@ -18,10 +19,12 @@ export const Projects = () => {
     <Fragment>
       <Header />
       <StyledProjects  >
-        <div className='toTop2'>
-          <h2>My Projects</h2>
-          <p>Selected Projects I've Worked on</p>
-        </div>
+        <Element name='projects'>
+          <div className='toTop2'>
+            <h2>My Projects</h2>
+            <p>Selected Projects I've Worked on.</p>
+          </div>
+        </Element>
 
         <article className='normal-exp'>
           <Image image={retailarShop} className='toTop3'>
@@ -73,6 +76,7 @@ export const Projects = () => {
               <button>
                 <a href="https://kubitx.com" target="_blank" rel="noopener noreferrer">View Project </a>
               </button>
+              <BsArrowRight size={22} />
             </div>
           </div>
           <Image image={kbx} className='toTop3'>
@@ -131,6 +135,7 @@ export const Projects = () => {
               <button>
                 <a href="https://hazontech.com" target="_blank" rel="noopener noreferrer">View Project </a>
               </button>
+              <BsArrowRight size={22} />
             </div>
           </div>
           <Image image={hazon} className='toTop3'>
@@ -182,6 +187,7 @@ export const Projects = () => {
               <button>
                 <a href="/">View Project </a>
               </button>
+              <BsArrowRight size={22} />
             </div>
           </div>
           <Image image={etoPortfolio} className='toTop3'>
@@ -189,7 +195,7 @@ export const Projects = () => {
           </Image>
         </article>
       </StyledProjects>
-      <Footer />
+      <Footer projects={true} />
     </Fragment>
   )
 }

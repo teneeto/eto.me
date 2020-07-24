@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Element } from 'react-scroll'
 
 import { StyledAbout } from './About.styled';
 import { Header, Footer, ImageFrame, ReloadToTop } from '../../components';
@@ -9,11 +10,14 @@ export const About = () => {
   return (
     <Fragment>
       <Header />
+
       <StyledAbout>
         <div className='container'>
-          <div className='toTop2'>
-            <h2>About Me</h2>
-          </div>
+          <Element name='about'>
+            <div className='toTop2'>
+              <h2>About Me</h2>
+            </div>
+          </Element>
 
           <article>
             <div className='toTop3' >
@@ -22,7 +26,7 @@ export const About = () => {
             <div className='toTop4'>
               <div>
                 <p>
-                  Hello I'm Eto, a Software Developer based in Lagos, Nigeria
+                  Hello I'm Eto, a Software Developer based in Lagos, Nigeria.
                 </p>
                 <p>
                   I spend time building anything that is an occupant of the internet.
@@ -32,10 +36,10 @@ export const About = () => {
                   I have worked with teams to build scalable and marketable products that are currently been used by a large number of users.
                 </p>
                 <p>
-                  Currently brainstorming and building amazing Products for Hazon Technology
+                  Currently brainstorming and building amazing Products for Hazon Technology.
                 </p>
                 <p>
-                  In the past i have worked with Retailar Technology to build Retail Services. Prior to Retailar, I have Worked with KubitX to build Elegant landing pages and tag along with the Engineering team to create a crypto exchange platform
+                  In the past i have worked with Retailar Technology to build Retail Services. Prior to Retailar, I have Worked with KubitX to build Elegant landing pages and tag along with the Engineering team to create a crypto exchange platform.
                 </p>
 
                 <p>
@@ -83,7 +87,8 @@ export const About = () => {
           </article>
         </div>
       </StyledAbout>
-      <Footer />
+
+      <Footer about={true} />
     </Fragment >
   )
 }

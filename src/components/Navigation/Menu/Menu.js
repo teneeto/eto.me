@@ -5,38 +5,52 @@ import { Link as ScrollLink } from 'react-scroll';
 
 import { StyledLink } from '../../../components';
 import { StyledMenu } from './Menu.styled';
-const Menu = ({ open, home }) => {
+const Menu = ({ open, setOpen, home, about, projects }) => {
   return (
     <StyledMenu open={open}>
       <div>
         <ul>
           {home && <li>
-            <ScrollLink to='pitchslate' spy={true} smooth={true} duration={5} offset={-400} >
+            <ScrollLink to='pitchslate' spy={true} smooth={true} duration={5} offset={-400} onClick={() => setOpen(!open)} >
               <span></span>
                   Home
             </ScrollLink>
           </li>}
 
           {!home && <li>
-            <StyledLink to='/' >
+            <StyledLink to='/' onClick={() => setOpen(!open)}>
               <span></span>
                   Home
             </StyledLink>
           </li>}
 
-          <li>
-            <StyledLink to='/about' >
+          {about && <li>
+            <StyledLink to='/about' onClick={() => setOpen(!open)}>
               <span></span>
-                  About
+                  About Me
                </StyledLink>
-          </li>
+          </li>}
 
-          <li>
-            <StyledLink to='/projects'>
+          {!about && <li>
+            <StyledLink to='/about' onClick={() => setOpen(!open)}>
+              <span></span>
+                  About Me
+               </StyledLink>
+          </li>}
+
+          {projects && <li>
+            <StyledLink to='/projects' onClick={() => setOpen(!open)}>
               <span></span>
                   Projects
                 </StyledLink>
-          </li>
+          </li>}
+
+          {!projects && <li>
+            <StyledLink to='/projects' onClick={() => setOpen(!open)}>
+              <span></span>
+                  Projects
+                </StyledLink>
+          </li>}
         </ul>
         <div>
           <h3>Contact Me</h3>
@@ -62,5 +76,6 @@ const Menu = ({ open, home }) => {
 }
 Menu.propTypes = {
   open: bool.isRequired,
+  setOpen: bool.isRequired
 }
 export default Menu;
