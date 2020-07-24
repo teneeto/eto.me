@@ -39,6 +39,9 @@ export const StyledProjects = styled.section`
     width: 100%;
     margin: auto;
     margin-bottom: 8rem;
+    @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
+      margin-bottom: 3rem;
+    }
     & > div{
       border-radius: 10px;
       & > div {

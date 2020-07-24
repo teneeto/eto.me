@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { StyledLink } from '..';
 import { StyledFooter } from './styles';
 
-export const Footer = ({ home }) => {
+export const Footer = ({ home, about, projects }) => {
   return (
     <StyledFooter home={home}>
       <div className='wrapper'>
@@ -24,7 +24,6 @@ export const Footer = ({ home }) => {
                   Home
             </ScrollLink>
               </li>}
-
               {!home && <li>
                 <StyledLink to='/' >
                   <span></span>
@@ -32,19 +31,31 @@ export const Footer = ({ home }) => {
             </StyledLink>
               </li>}
 
-              <li>
+              {about && <li>
+                <ScrollLink to='about' spy={true} smooth={true} duration={5} offset={-400} >
+                  <span></span>
+                  About Me
+                  </ScrollLink>
+              </li>}
+              {!about && <li>
                 <StyledLink to='/about' >
                   <span></span>
                   About Me
                </StyledLink>
-              </li>
+              </li>}
 
-              <li>
+              {projects && <li>
+                <ScrollLink to='projects' spy={true} smooth={true} duration={5} offset={-400} >
+                  <span></span>
+                  Projects
+                  </ScrollLink>
+              </li>}
+              {!projects && <li>
                 <StyledLink to='/projects'>
                   <span></span>
                   Projects
                 </StyledLink>
-              </li>
+              </li>}
             </ul>
           </div>
         </div>

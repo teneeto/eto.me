@@ -34,7 +34,7 @@ export const StyledAbout = styled.section`
             display:flex;
             justify-content: center;
             width: 100%;
-            margin-bottom: 5rem;
+            margin-bottom: 1.5rem;
           }
         }
 
@@ -57,7 +57,7 @@ export const StyledAbout = styled.section`
               @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
                 grid-template-columns: repeat(2, 1fr);
               }
-              
+
               li:not(:last-of-type){
                 margin-right: 1rem;
               }
