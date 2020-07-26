@@ -16,7 +16,12 @@ export const StyledFooter = styled.section`
       font-size: 0.9rem;
     }
 
-  @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+  @media screen and (max-width: ${({ theme }) => theme.lgTablet}) {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+    margin-bottom: -7rem;
+  }
+  @media screen and (max-height: 690px) {
     scroll-snap-align: none;
     scroll-snap-stop: normal;
     margin-bottom: -7rem;

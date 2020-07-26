@@ -42,7 +42,7 @@ export const About = () => {
                   In the past i have worked with Retailar Technology to build Retail Services. Prior to Retailar, I have Worked with KubitX to build Elegant landing pages and tag along with the Engineering team to create a crypto exchange platform.
                 </p>
 
-                <p>
+                <p class='tools'>
                   These are few tools I work with:
               </p>
 
@@ -54,7 +54,9 @@ export const About = () => {
                     <li><div />Tailwind</li>
                     <li><div />Styled Components</li>
                     <li><div />Bootstrap</li>
+                    <li><div />GSAP</li>
                     <li><div />JavaScript(Es6)</li>
+                    <li><div />JQuery</li>
                     <li><div />Babel</li>
                     <li><div />Webpack</li>
                     <li><div />NPM Scripts</li>
@@ -66,9 +68,9 @@ export const About = () => {
 
                   </ul>
                 </div>
-                <p>
+                <p class='tools'>
                   I also work having these in mind:
-              </p>
+                </p>
 
                 <div>
                   <ul>

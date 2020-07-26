@@ -9,7 +9,7 @@ export const theme = {
   greyColor: '#707070',
   lightGreyColor: '#c9c9c9',
   widescreen: '1366px',
-  bodyMaxWidth: '1300px',
+  bodyMaxWidth: '1310px',
   contentMaxWidth: '1090px',
   desktop: '1200px',
   lgTablet: '1024px',

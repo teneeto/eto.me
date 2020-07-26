@@ -12,6 +12,10 @@ export const StyledHeader = styled.nav`
     justify-content: space-between;
     max-width: 1312px;
     margin: auto;
-    padding: 1.5rem  0.5rem;
+    padding: 1.5rem  1.25rem;
+
+    @media screen and (max-width: ${({ theme }) => theme.smMobile}) {
+      padding: 1.5rem 0.5rem;
+    }
   }
 `
