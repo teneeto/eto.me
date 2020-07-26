@@ -51,7 +51,7 @@ export const StyledContact = styled.section`
               border: 1px solid ${({ theme }) => theme.accentColor};
               color: ${({ theme }) => theme.accentColor};
               transition: all 300ms linear;
-      }
+            }
           }
         }
 
@@ -65,6 +65,7 @@ export const StyledContact = styled.section`
 
         textarea{
           min-height: 20vh;
+          font-family: 'PoppinsRegular', sans-serif;
         }
       }
     }
