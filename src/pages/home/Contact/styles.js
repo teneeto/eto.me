@@ -43,6 +43,11 @@ export const StyledContact = styled.section`
           color: ${({ theme }) => theme.lightColor};
           background-color: transparent;
           outline:none;
+
+          &:focus{
+            border: 1px solid ${({ theme }) => theme.accentColor};
+            transition: all 300ms linear;
+          }
         }
         input[type="submit"]{
           &:hover{
