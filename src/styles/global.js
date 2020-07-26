@@ -227,7 +227,8 @@ export const GlobalStyles = createGlobalStyle`
 
       :hover{
         box-shadow: none;
-        border: 2px solid ${({ theme }) => theme.greyColor};
+        border: 1px solid ${({ theme }) => theme.accentColor};
+        color: ${({ theme }) => theme.accentColor};
         background-position: right bottom;
         transition: all 300ms linear;
       } 

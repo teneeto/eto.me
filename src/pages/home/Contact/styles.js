@@ -44,6 +44,16 @@ export const StyledContact = styled.section`
           background-color: transparent;
           outline:none;
         }
+        input[type="submit"]{
+          &:hover{
+            :hover{
+              box-shadow: none;
+              border: 1px solid ${({ theme }) => theme.accentColor};
+              color: ${({ theme }) => theme.accentColor};
+              transition: all 300ms linear;
+      }
+          }
+        }
 
         input:-webkit-autofill,
         input:-webkit-autofill:hover,
