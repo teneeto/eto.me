@@ -10,7 +10,7 @@ export const StyledHeader = styled.nav`
   .nav-wrapper{
     display: flex;
     justify-content: space-between;
-    max-width: 1312px;
+    max-width: 1322px;
     margin: auto;
     padding: 1.5rem  1.25rem;
 
