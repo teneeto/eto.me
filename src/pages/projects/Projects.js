@@ -114,15 +114,17 @@ export const Projects = () => {
 
         <article className='flipped-exp toTop4'>
           <div>
-            <h3>Kubitx</h3>
+            <h3>Hazon Technology</h3>
             <p>
-              Hazon Landing Page, still in Progress...
+              Hazon Landing Page
             </p>
             <div>
               <ul>
                 <li>HTML </li>
                 <li>|</li>
                 <li>SASS</li>
+                <li>|</li>
+                <li>GSAP</li>
                 <li>|</li>
                 <li>Babel</li>
                 <li>|</li>

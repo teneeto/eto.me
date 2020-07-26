@@ -9,10 +9,9 @@ export const Image = (props, { children }) => {
 }
 const Wrapper = styled.div`
   position: relative;
-  background-color: yellow;
   height: 26.5rem;
   min-width: 60%;
-  background-color: #C9C9C9;
+  /* background-color: #C9C9C9; */
   background-size: cover;
   background-position-x: center;
   background-image: ${({ image }) => `url(${image})`};

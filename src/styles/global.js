@@ -198,6 +198,12 @@ export const GlobalStyles = createGlobalStyle`
       height: auto;
       margin: 10rem 0;
     }
+    @media screen and (max-height: 690px) {
+      scroll-snap-align: none;
+      scroll-snap-stop: normal;
+      height: auto;
+      margin: 10rem 0;
+    }
     @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
       margin: 7rem 0;
     }

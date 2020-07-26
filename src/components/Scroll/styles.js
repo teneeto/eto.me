@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledScroll = styled.div`
   position: fixed;
   top: 45%;
-  right: 6%;
+  right: 7%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20,9 +20,12 @@ export const StyledScroll = styled.div`
     outline: none;
   }
   @media screen and (max-width: ${({ theme }) => theme.bodyMaxWidth}) {
-    right: 20px;
+    right: 30px;
   }
   @media screen and (max-width: ${({ theme }) => theme.lgTablet}) {
+    display: none;
+  }
+  @media screen and (max-height: 690px) {
     display: none;
   }
 

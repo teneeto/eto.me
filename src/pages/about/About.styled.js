@@ -45,6 +45,9 @@ export const StyledAbout = styled.section`
           p{
             margin-bottom: 1rem;
           }
+          .tools{
+            color: ${({ theme }) => theme.accentColor};
+          }
           div{
             ul{
               margin-bottom: 2.5rem;
