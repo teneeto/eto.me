@@ -185,14 +185,14 @@ export const GlobalStyles = createGlobalStyle`
   section {
     max-width: ${({ theme }) => theme.bodyMaxWidth};
     margin: 0 auto;
-    padding: 0 0.5rem;
+    padding: 0 1.25rem;
     height: 100vh;
     width: 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     /* overflow: hidden; */
 
-    @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+    @media screen and (max-width: ${({ theme }) => theme.lgTablet}) {
       scroll-snap-align: none;
       scroll-snap-stop: normal;
       height: auto;
@@ -200,6 +200,9 @@ export const GlobalStyles = createGlobalStyle`
     }
     @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
       margin: 7rem 0;
+    }
+    @media screen and (max-width: ${({ theme }) => theme.smMobile}) {
+      padding: 0 0.5rem;
     }
   }
 

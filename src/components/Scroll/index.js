@@ -41,19 +41,19 @@ export const Scroll = ({ visible }) => {
 
   return (
     <StyledScroll visible={visible}>
-      <ScrollLink to='pitchslate' spy={true} smooth={true} duration={5} offset={-400} onSetActive={handlePitchslate} >
+      <ScrollLink to='pitchslate' spy={true} smooth={true} duration={5} offset={-50} onSetActive={handlePitchslate} >
         <div className='pitchslate'></div>
       </ScrollLink>
 
-      <ScrollLink to='projects' spy={true} smooth={true} duration={5} offset={-400} onSetActive={handleProjects} >
+      <ScrollLink to='projects' spy={true} smooth={true} duration={5} offset={-50} onSetActive={handleProjects} >
         <div className='projects'></div>
       </ScrollLink>
 
-      <ScrollLink to='contact' spy={true} smooth={true} duration={5} offset={-400} onSetActive={handleContacts}>
+      <ScrollLink to='contact' spy={true} smooth={true} duration={5} offset={-50} onSetActive={handleContacts}>
         <div className='contact'></div>
       </ScrollLink>
 
-      <ScrollLink to='footer' spy={true} smooth={true} duration={5} offset={-400} onSetActive={handleFooter}>
+      <ScrollLink to='footer' spy={true} smooth={true} duration={5} offset={-50} onSetActive={handleFooter}>
         <div className='footer'></div>
       </ScrollLink>
     </StyledScroll>

@@ -83,11 +83,14 @@ export const StyledProjects = styled.section`
             position: absolute;
             align-self: flex-end;
             max-width: ${({ theme }) => theme.contentMaxWidth};
-            width: calc(100% - 2rem);
+            width: calc(100% - 3.25rem);
             margin-left: 0;
             opacity: 0.9 !important;
             height: auto;
             row-gap: 0.5rem;
+        }
+        @media screen and (max-width: ${({ theme }) => theme.smMobile}) {
+            width: calc(100% - 2rem);
         }
 
         p{

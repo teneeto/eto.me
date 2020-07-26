@@ -19,8 +19,10 @@ export const StyledScroll = styled.div`
   &:focus {
     outline: none;
   }
-
-  @media screen and (max-width: ${({ theme }) => theme.desktop}) {
+  @media screen and (max-width: ${({ theme }) => theme.bodyMaxWidth}) {
+    right: 20px;
+  }
+  @media screen and (max-width: ${({ theme }) => theme.lgTablet}) {
     display: none;
   }
 
