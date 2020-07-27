@@ -76,7 +76,7 @@ export const Projects = () => {
               <button>
                 <a href="https://kubitx.com" target="_blank" rel="noopener noreferrer">View Project </a>
               </button>
-              <BsArrowRight size={22} />
+              <BsArrowRight className='arrow-right' size={22} />
             </div>
           </div>
           <Image image={kbx} className='toTop3'>
@@ -137,7 +137,7 @@ export const Projects = () => {
               <button>
                 <a href="https://hazontech.com" target="_blank" rel="noopener noreferrer">View Project </a>
               </button>
-              <BsArrowRight size={22} />
+              <BsArrowRight className='arrow-right' size={22} />
             </div>
           </div>
           <Image image={hazon} className='toTop3'>
@@ -189,7 +189,7 @@ export const Projects = () => {
               <button>
                 <a href="/">View Project </a>
               </button>
-              <BsArrowRight size={22} />
+              <BsArrowRight className='arrow-right' size={22} />
             </div>
           </div>
           <Image image={etoPortfolio} className='toTop3'>
