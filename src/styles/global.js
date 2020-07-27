@@ -108,10 +108,10 @@ export const GlobalStyles = createGlobalStyle`
       font-size: 2.35rem;
     }
     @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
-      font-size: 2.65rem;
+      font-size: 2.55rem;
     }
     @media screen and (max-width: ${({ theme }) => theme.mdMobile}) {
-      font-size: 2.15rem;
+      font-size: 2.05rem;
     }
     @media screen and (max-width: ${({ theme }) => theme.smMobile}) {
       font-size: 1.8rem;
