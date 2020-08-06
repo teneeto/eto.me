@@ -206,9 +206,6 @@ export const GlobalStyles = createGlobalStyle`
     }
     @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
       margin: 7rem 0;
-      padding: 0 0.875rem;
-    }
-    @media screen and (max-width: ${({ theme }) => theme.smMobile}) {
       padding: 0 0.5rem;
     }
   }
