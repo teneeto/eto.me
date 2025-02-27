@@ -13,7 +13,9 @@ export const Footer = ({ home, about, projects }) => {
             <h3>Contact Me</h3>
             <div>
               <span></span>
-              <a href="mailto:oleietotaziba@gmail.com">click here</a>
+              <a href="mailto:etotaziba.olei@gmail.com">
+                etotaziba.olei@gmail.com
+              </a>
             </div>
           </div>
           <div>

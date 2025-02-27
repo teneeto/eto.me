@@ -75,7 +75,9 @@ const Menu = ({ open, setOpen, home, about, projects }) => {
           <h3>Contact Me</h3>
           <div>
             <span></span>
-            <a href="mailto:oleietotaziba@gmail.com">oleietotaziba@gmail.com</a>
+            <a href="mailto:etotaziba.olei@gmail.com">
+              etotaziba.olei@gmail.com
+            </a>
           </div>
         </div>
       </div>
