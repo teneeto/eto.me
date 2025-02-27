@@ -1,12 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-export const Image = (props, { children }) => {
-  return (
-    <Wrapper {...props}>
-      {children}
-    </Wrapper>
-  )
-}
+import React from "react";
+import styled from "styled-components";
+
+export const Image = (props) => {
+  return <Wrapper {...props}>{props.children}</Wrapper>;
+};
 const Wrapper = styled.div`
   position: relative;
   height: 26.5rem;
@@ -22,4 +19,4 @@ const Wrapper = styled.div`
     background-position: top center;
     background-repeat: no-repeat;
   }
-`
+`;

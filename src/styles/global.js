@@ -1,6 +1,6 @@
 // global.js
-import { createGlobalStyle, keyframes } from 'styled-components';
-import './fonts.css';
+import { createGlobalStyle, keyframes } from "styled-components";
+import "./fonts.css";
 
 const faintIn = keyframes`
 	from {
@@ -10,7 +10,7 @@ const faintIn = keyframes`
 	to {
 		opacity: 1;
 	}
-`
+`;
 
 const toTop1 = keyframes`
 	from {
@@ -22,7 +22,7 @@ const toTop1 = keyframes`
 		opacity: 1;
 		transform: translateY(0rem);
 	}
-`
+`;
 
 const toTop2 = keyframes`
 	from {
@@ -34,7 +34,7 @@ const toTop2 = keyframes`
 		opacity: 1;
 		transform: translateY(0rem);
 	}
-`
+`;
 
 const toTop3 = keyframes`
 	from {
@@ -46,7 +46,7 @@ const toTop3 = keyframes`
 		opacity: 1;
 		transform: translateY(0rem);
 	}
-`
+`;
 
 export const GlobalStyles = createGlobalStyle`
 
