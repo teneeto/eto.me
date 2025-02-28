@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ketchup from "../../../assets/ketchup.jpg";
+import ketchup from "../../../assets/eto_birthday.jpg";
 import pattern1 from "../../../assets/Pattern1.svg";
 import pattern2 from "../../../assets/Pattern2.svg";
 
