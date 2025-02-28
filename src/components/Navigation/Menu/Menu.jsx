@@ -70,6 +70,15 @@ const Menu = ({ open, setOpen, home, about, projects }) => {
               </StyledLink>
             </li>
           )}
+          <li>
+            <a
+              href="/EtotazibaCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV
+            </a>
+          </li>
         </ul>
         <div>
           <h3>Contact Me</h3>

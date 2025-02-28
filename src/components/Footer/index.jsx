@@ -13,9 +13,7 @@ export const Footer = ({ home, about, projects }) => {
             <h3>Contact Me</h3>
             <div>
               <span></span>
-              <a href="mailto:etotaziba.olei@gmail.com">
-                etotaziba.olei@gmail.com
-              </a>
+              <a href="mailto:etotaziba.olei@gmail.com">Send a Mail</a>
             </div>
           </div>
           <div>
@@ -88,24 +86,22 @@ export const Footer = ({ home, about, projects }) => {
                   </StyledLink>
                 </li>
               )}
+              <li>
+                <a
+                  href="/EtotazibaCV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>
         <div className="copyright">
-          <div>© Etotaziba Olei 2020</div>
+          <div>© Eto Olei 2025</div>
           <div>
             <ul>
-              <li>
-                <span></span>{" "}
-                <a
-                  href="https://eto.netlify.app/Etotaziba_Tene_Olei_Resumé.pdf"
-                  // download
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View CV
-                </a>
-              </li>
               <li>
                 <span></span>{" "}
                 <a
