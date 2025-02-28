@@ -10,13 +10,10 @@ export const StyledHeader = styled.nav`
   .nav-wrapper{
     display: flex;
     justify-content: space-between;
-    max-width: 1322px;
+    max-width: 1312px;
     margin: auto;
-    padding: 1.5rem  1.25rem;
+    padding: 1.5rem  0.5rem;
     @media screen and (max-width: ${({ theme }) => theme.lgMobile}) {
-      padding: 1.5rem 0.875rem;
-    }
-    @media screen and (max-width: ${({ theme }) => theme.smMobile}) {
       padding: 1.5rem 0.5rem;
     }
   }

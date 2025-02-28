@@ -83,7 +83,7 @@ export const StyledProjects = styled.section`
             position: absolute;
             align-self: flex-end;
             max-width: ${({ theme }) => theme.contentMaxWidth};
-            width: calc(100% - 2.875rem);
+            width: calc(100% - 2rem);
             margin-left: 0;
             opacity: 0.9 !important;
             height: auto;
