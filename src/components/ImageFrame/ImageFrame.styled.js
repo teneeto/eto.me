@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import ketchup from "../../assets/eto_qatar.jpg";
+import ketchup from "../../assets/eto_at_sea.jpg";
 export const StyledImageFrame = styled.div`
   position: relative;
   width: 28.5vmax;
