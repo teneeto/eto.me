@@ -307,6 +307,7 @@ export const Projects = () => {
                   Chrome Extension{" "}
                 </a>
               </button>
+              <span style={{ marginRight: "10px", marginLeft: "10px" }}>|</span>
               <button>
                 <a
                   href="https://tensfer.co/"
