@@ -54,6 +54,27 @@ export const About = () => {
                   <ul>
                     <li>
                       <div />
+                      React
+                    </li>
+                    <li>
+                      <div />
+                      React Native
+                    </li>
+                    <li>
+                      <div />
+                      Next.js
+                    </li>
+                    <li>
+                      <div />
+                      JavaScript
+                    </li>
+
+                    <li>
+                      <div />
+                      TypeScripts
+                    </li>
+                    <li>
+                      <div />
                       HTML5
                     </li>
                     <li>
@@ -72,41 +93,10 @@ export const About = () => {
                       <div />
                       Styled Components
                     </li>
-                    <li>
-                      <div />
-                      Bootstrap
-                    </li>
-                    <li>
-                      <div />
-                      GSAP
-                    </li>
-                    <li>
-                      <div />
-                      JavaScript(Es6)
-                    </li>
-                    <li>
-                      <div />
-                      JQuery
-                    </li>
-                    <li>
-                      <div />
-                      Babel
-                    </li>
-                    <li>
-                      <div />
-                      Webpack
-                    </li>
+
                     <li>
                       <div />
                       NPM Scripts
-                    </li>
-                    <li>
-                      <div />
-                      TypeScripts
-                    </li>
-                    <li>
-                      <div />
-                      React JS
                     </li>
                     <li>
                       <div />
