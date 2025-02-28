@@ -98,6 +98,17 @@ export const Footer = ({ home, about, projects }) => {
               <li>
                 <span></span>{" "}
                 <a
+                  href="https://eto.netlify.app/Etotaziba_Tene_Olei_Resumé.pdf"
+                  // download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View CV
+                </a>
+              </li>
+              <li>
+                <span></span>{" "}
+                <a
                   href="https://twitter.com/teneetoe"
                   target="_blank"
                   rel="noopener noreferrer"
