@@ -10,7 +10,7 @@ import hazon from "../../assets/hazon.png";
 import gifSearch from "../../assets/gif_search_app.png";
 
 import exfy from "../../assets/exfy.png";
-import ourHaven from "../../assets/ourHaven.png";
+import ourHaven from "../../assets/ourhaven.png";
 import tensfer from "../../assets/tensfer.png";
 import reactNavigation from "../../assets/rnavigation.png";
 import reactNativePaper from "../../assets/rnpaper.png";
