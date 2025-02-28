@@ -12,11 +12,13 @@ export const PitchSlate = () => {
         <div className="intro">
           <h1 className="toTop1">Hello I'm Eto Olei,</h1>
           <h1 className="toTop2">
-            <span>I build for the Web</span>
+            <span>I build for the Web & Mobile</span>
           </h1>
           <p className="toTop3">
-            I am a Software developer, based in Lagos, Nigeria. i spend time
-            building amazing websites, applications and everything in between.
+            I’m a Software Developer, always on the move, creating innovative
+            websites, mobile apps, and everything in between. As a remote
+            engineer, I’m not bound by location—wherever I am, I’m crafting
+            seamless digital experiences that connect users everywhere.
           </p>
         </div>
         <div className="picture-wrapper">
