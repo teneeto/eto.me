@@ -26,28 +26,26 @@ export const About = () => {
             <div className="toTop4">
               <div>
                 <p>
-                  Hello I'm Eto, a Software Developer based in Lagos, Nigeria.
+                  Hello, I'm Eto, a Software Developer who loves traveling and
+                  working from different locations.
                 </p>
                 <p>
-                  I spend time building anything that is an occupant of the
-                  internet. I'm particular about building Responsive Web
-                  Presence with Applied Accessibility and Applied Visual Design
-                  with Mobile-Users inclusion and Considerations.
+                  I build high-performance applications and contribute to
+                  open-source projects that improve developer experiences. I’ve
+                  worked on Expensify, React Native Paper, React Navigation and
+                  other OSS libraries, enhancing UI/UX and functionality.
                 </p>
                 <p>
-                  I have worked with teams to build scalable and marketable
-                  products that are currently been used by a large number of
-                  users.
+                  I’ve helped scale products like Tensfer (a seamless CEX-DeFi
+                  wallet) and OurHaven, where I migrated the mobile app to React
+                  Native CLI for better performance and flexibility. As a
+                  co-founder of Clooza, I’m leading the development of a smart
+                  discovery platform.
                 </p>
                 <p>
-                  Currently brainstorming and building amazing Products for
-                  Hazon Technology.
-                </p>
-                <p>
-                  In the past i have worked with Retailar Technology to build
-                  Retail Services. Prior to Retailar, I have Worked with KubitX
-                  to build Elegant landing pages and tag along with the
-                  Engineering team to create a crypto exchange platform.
+                  I’ve also worked at Callstack, Bene Studio, KubitX, Retailar,
+                  and Hazon Technology, building fintech, retail, and enterprise
+                  solutions that impact users worldwide.
                 </p>
 
                 <p class="tools">These are few tools I work with:</p>
