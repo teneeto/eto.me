@@ -15,11 +15,11 @@ export const PitchSlate = () => {
             <span>I build for the Web & Mobile</span>
           </h1>
           <p className="toTop3">
-            I’m a Software Developer, always on the move, creating innovative
-            websites, mobile apps, and everything in between. As a remote
-            engineer with over 6+ of development experience, I’m not bound by
-            location—wherever I am, I’m crafting seamless digital experiences
-            that connect users everywhere.
+            I’m a Software Developer, constantly re-iterating, creating
+            innovative websites, mobile apps, and everything in between. As a
+            remote engineer with over 5 years of development experience, I’m not
+            bound by location. Wherever I am, I’m crafting seamless digital
+            experiences that connect users everywhere.
           </p>
         </div>
         <div className="picture-wrapper">
