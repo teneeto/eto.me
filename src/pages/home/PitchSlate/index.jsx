@@ -17,9 +17,9 @@ export const PitchSlate = () => {
           <p className="toTop3">
             I’m a Software Developer, constantly re-iterating, creating
             innovative websites, mobile apps, and everything in between. As a
-            remote engineer with over 5 years of development experience, I’m not
+            remote engineer with over 6 years of development experience, I’m not
             bound by location. Wherever I am, I’m crafting seamless digital
-            experiences that connect users everywhere.
+            experiences that connects users everywhere.
           </p>
         </div>
         <div className="picture-wrapper">
